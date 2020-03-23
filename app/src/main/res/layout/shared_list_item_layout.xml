@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="60dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/shared_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shared_content_background"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/shared_content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+
+        <com.vgtech.common.view.NoScrollGridview
+            android:id="@+id/shared_imagegridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="5dp"
+            android:visibility="gone" />
+
+
+        <com.vgtech.common.view.NoScrollListview
+            android:id="@+id/shared_voice_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</LinearLayout>

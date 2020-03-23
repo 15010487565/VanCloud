@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/schedule_count_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#78ffffff"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp">
+
+            <View
+                android:id="@+id/schedule_start_line"
+                android:layout_width="1dip"
+                android:layout_height="24.5dip"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:src="@drawable/icon_circle_bg" />
+
+                <ImageView
+                    android:layout_width="6dip"
+                    android:layout_height="6dip"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_circle_blue" />
+
+            </FrameLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_schedule_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textColor="#0366a2"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/progress_view_schedule"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/progressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@android:id/progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+            <TextView
+                android:id="@+id/progress_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dip"
+                android:paddingLeft="6dip"
+                android:paddingTop="2dip"
+                android:text="@string/data_loading"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/error_footer"
+            android:layout_width="fill_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dip"
+                android:text="@string/btn_retry"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_network_error"
+                android:drawablePadding="5dip"
+                android:text="@string/text_no_connection"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

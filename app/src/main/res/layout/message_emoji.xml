@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F9F8F4">
+
+  <android.support.v4.view.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:id="@+id/emojiViewPager"/>
+
+  <LinearLayout android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal"
+                android:id="@+id/points"
+                android:gravity="center"
+    >
+    <ImageView android:layout_width="8dp"
+               android:layout_height="8dp"
+               android:layout_margin="5dp"
+               android:src="@drawable/emoji_point"
+               android:contentDescription="@null"/>
+    <ImageView android:layout_width="8dp"
+               android:layout_height="8dp"
+               android:layout_margin="5dp"
+               android:src="@drawable/emoji_point"
+               android:contentDescription="@null"/>
+    <ImageView android:layout_width="8dp"
+               android:layout_height="8dp"
+               android:layout_margin="5dp"
+               android:src="@drawable/emoji_point"
+               android:contentDescription="@null"/>
+    <ImageView android:layout_width="8dp"
+               android:layout_height="8dp"
+               android:layout_margin="5dp"
+               android:src="@drawable/emoji_point"
+               android:contentDescription="@null"/>
+  </LinearLayout>
+
+</LinearLayout>

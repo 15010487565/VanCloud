@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_below="@id/title_bar"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ViewStub
+                android:id="@+id/vs_schedule"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/create_schedule" />
+
+            <ViewStub
+                android:id="@+id/vs_resume"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/resume_count" />
+
+            <ViewStub
+                android:id="@+id/vs_announcement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/create_announcement" />
+
+            <ViewStub
+                android:id="@+id/vs_leave_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/create_leave" />
+
+            <ViewStub
+                android:id="@+id/vs_workreport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/create_work_report" />
+
+
+            <EditText
+                android:id="@+id/et_sendmessage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textSize="16sp"
+                android:textColorHint="#cccccc"
+                android:textColor="@color/text_black"
+                android:gravity="left|top"
+                android:hint="@string/hint_input_content"
+                android:maxEms="500"
+                android:minHeight="100dip" />
+
+            <ViewStub
+                android:id="@+id/vs_forward"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="100dip"
+                android:layout="@layout/forward" />
+
+            <com.vgtech.vancloud.ui.common.publish.internal.NoScrollGridView
+                android:id="@+id/noScrollgridview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@color/white"
+                android:horizontalSpacing="3dp"
+                android:listSelector="@drawable/item_select"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp" />
+
+            <com.vgtech.common.view.NoScrollListview
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/white"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+
+            <FrameLayout
+                android:id="@+id/address_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/btn_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/bg_location"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dip"
+                    android:paddingRight="11dip"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="25dip"
+                        android:layout_height="25dip"
+                        android:src="@drawable/ico_c" />
+
+                    <TextView
+                        android:id="@+id/address_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btn_delete_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="5dip"
+                    android:src="@mipmap/delete_res"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <ViewStub
+                android:id="@+id/vs_task"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/create_task" />
+            <ViewStub
+                android:id="@+id/vs_schedule_start_end_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/schedule_start_end_date" />
+
+
+            <ViewStub
+                android:id="@+id/vs_executer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/executer" />
+
+            <LinearLayout
+                android:id="@+id/select_user_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dip"
+                    android:background="@color/banckground_color" />
+
+                <LinearLayout
+                    android:id="@+id/btn_select_user"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/item_select"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/tv_receiver_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lable_canyuren"
+                        android:textColor="@color/comment_grey"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_user_count"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:drawableRight="@drawable/icon_arrow_right"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/text_black"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <com.vgtech.vancloud.ui.common.publish.internal.NoScrollGridView
+                    android:id="@+id/user_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="5"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+            <ViewStub
+                android:id="@+id/vs_ccuser"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/ccuser" />
+
+            <FrameLayout
+                android:id="@+id/attachment_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_attachment" />
+
+                    <TextView
+                        android:id="@+id/attachment_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btn_attachment_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="5dip"
+                    android:src="@mipmap/delete_res" />
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/announce_top"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/lable_top"
+                    android:textColor="@color/comment_grey"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/rb_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/rb_top"
+                    android:button="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="#eeeef0"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btn_emoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:background="@drawable/item_select_nonormal"
+                android:src="@drawable/btn_emoji" />
+
+            <ImageButton
+                android:id="@+id/btn_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_select_nonormal"
+                android:padding="10dip"
+                android:src="@drawable/btn_take" />
+
+            <ImageView
+                android:id="@+id/btn_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:src="@drawable/btn_attachment"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/recordButton"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/msg_record_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/normal"
+                android:textColor="@color/text_black" />
+
+            <ImageButton
+                android:id="@+id/btn_arrow_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_select_nonormal"
+                android:padding="10dip"
+                android:src="@drawable/icon_arrow_down" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/more_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

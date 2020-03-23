@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_bgitem"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/user_photo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/user_photo_default_small"
+            fresco:roundAsCircle="true"
+            fresco:roundedCornerRadius="180dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/user_photo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/bg_title"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/content_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                android:textColor="@color/text_black"
+                android:textSize="15sp" />
+
+            <com.vgtech.common.view.NoScrollGridview
+                android:id="@+id/imagegridview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:verticalSpacing="5dp"
+                android:visibility="gone" />
+
+            <com.vgtech.common.view.NoScrollListview
+                android:id="@+id/voice_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/split_list"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/forward_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shared_content_background"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/forward_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="sssss"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp" />
+
+
+                <com.vgtech.common.view.NoScrollGridview
+                    android:id="@+id/forward_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:verticalSpacing="5dp"
+                    android:visibility="gone" />
+
+
+                <com.vgtech.common.view.NoScrollListview
+                    android:id="@+id/forward_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:divider="@null"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/locate_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4ab9fc"
+                android:textSize="13dp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:id="@+id/timestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="ssssssssssss"
+                    android:textColor="@color/comment_grey"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_share_action"
+                    android:layout_width="25dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/btn_share_action" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/comment_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_comment"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/praise_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_share_goods" />
+
+                    <TextView
+                        android:id="@+id/tv_goods"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="#5577a7"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/comment_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@color/line_color" />
+
+                <com.vgtech.common.view.NoScrollListview
+                    android:id="@+id/comment_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/split_list"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:divider="@null"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_all_comment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:textColor="#5577a7"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_color" />
+</LinearLayout>

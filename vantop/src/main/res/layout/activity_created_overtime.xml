@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/overtime_type_rl"
+                style="@style/ApprovalDetailsRow"
+                android:background="@drawable/item_select"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/overtime_type"
+                    style="@style/explain_style1"
+                    android:text="@string/vantop_overtime_type" />
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_alignBottom="@id/overtime_type"
+                    android:layout_alignTop="@id/overtime_type"
+                    style="@style/arrow"
+                    />
+                <TextView
+                    android:id="@+id/overtime_type_txt"
+                    style="@style/explain_content1"
+                    android:layout_width="match_parent"
+                    android:layout_toLeftOf="@id/iv1"
+                    android:gravity="right"
+                    android:text="@string/vantop_please_select" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/overtime_line"
+                style="@style/divider_style"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/shift_rl"
+                style="@style/ApprovalDetailsRow"
+                android:background="@drawable/item_select"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/shift"
+                    style="@style/explain_style1"
+                    android:text="@string/vantop_shift" />
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_alignBottom="@id/shift"
+                    android:layout_alignTop="@id/shift"
+                    style="@style/arrow" />
+                <TextView
+                    android:id="@+id/shift_txt"
+                    style="@style/explain_content1"
+                    android:layout_width="match_parent"
+                    android:layout_toLeftOf="@id/iv2"
+                    android:gravity="right"
+                    android:text="@string/vantop_please_select" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/shift_line"
+                style="@style/divider_style"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/start_time_click"
+                style="@style/ApprovalDetailsRow"
+                android:background="@drawable/item_select">
+
+                <TextView
+                    android:id="@+id/start_time"
+                    style="@style/explain_style1"
+                    android:text="@string/vantop_start_time" />
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_alignBottom="@id/start_time"
+                    android:layout_alignTop="@id/start_time"
+                    style="@style/arrow" />
+                <TextView
+                    android:id="@+id/start_time_txt"
+                    style="@style/explain_content1"
+                    android:layout_width="match_parent"
+                    android:layout_toLeftOf="@id/iv3"
+                    android:gravity="right"
+                    android:text="@string/vantop_please_select" />
+
+            </RelativeLayout>
+
+            <ImageView
+                style="@style/divider_style"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/end_time_click"
+                style="@style/ApprovalDetailsRow"
+                android:background="@drawable/item_select">
+
+                <TextView
+                    android:id="@+id/end_time"
+                    style="@style/explain_style1"
+                    android:text="@string/vantop_end_time" />
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_alignBottom="@id/end_time"
+                    android:layout_alignTop="@id/end_time"
+                    style="@style/arrow" />
+                <TextView
+                    android:id="@+id/end_time_txt"
+                    style="@style/explain_content1"
+                    android:layout_width="match_parent"
+                    android:layout_toLeftOf="@id/iv4"
+                    android:gravity="right"
+                    android:text="@string/vantop_please_select" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                style="@style/divider_style"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                style="@style/ApprovalDetailsRow"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/explain_style1"
+                    android:text="@string/vantop_overtime_num" />
+
+                <TextView
+                    android:id="@+id/overtime_num_txt"
+                    style="@style/explain_content1"
+                    android:singleLine="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#1ec0e6" />
+            </RelativeLayout>
+
+            <ImageView
+                style="@style/divider_style"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/deduceat_num_click"
+                style="@style/ApprovalDetailsRow"
+                android:background="@drawable/item_select">
+
+                <TextView
+                    android:id="@+id/deduceat_num"
+                    style="@style/explain_style1"
+                    android:text="@string/vantop_deduceat_num" />
+                <ImageView
+                    android:id="@+id/iv5"
+                    android:layout_alignBottom="@id/deduceat_num"
+                    android:layout_alignTop="@id/deduceat_num"
+                    style="@style/arrow" />
+                <TextView
+                    android:id="@+id/deduceat_num_txt"
+                    style="@style/explain_content1"
+                    android:layout_width="match_parent"
+                    android:layout_toLeftOf="@id/iv5"
+                    android:gravity="right"
+                    android:singleLine="true" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/deduceat_num_click_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/below_divider"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/approval_supervisor_click"
+                style="@style/ApprovalDetailsRow"
+                android:background="@drawable/item_select">
+
+                <TextView
+                    android:id="@+id/approval_supervisor"
+                    style="@style/explain_style1"
+                    android:text="@string/vantop_approval_supervisor" />
+                <ImageView
+                    android:id="@+id/approval_arrow"
+                    android:layout_alignBottom="@id/approval_supervisor"
+                    android:layout_alignTop="@id/approval_supervisor"
+                    style="@style/arrow" />
+                <TextView
+                    android:id="@+id/approval_supervisor_txt"
+                    style="@style/explain_content1"
+                    android:layout_width="match_parent"
+                    android:layout_toLeftOf="@id/approval_arrow"
+                    android:gravity="right"
+                    android:text="@string/vantop_please_select" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                style="@style/divider_style"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                style="@style/ApprovalDetailsRow"
+                android:background="@color/white">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/overtime_reason"-->
+                    <!--style="@style/explain_style1"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="@string/vantop_reason" />-->
+
+                <EditText
+                    android:id="@+id/overtime_reason_edt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:hint="@string/vantop_overtime_hint"
+                    android:maxLength="500"
+                    android:minHeight="80dip"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/txt_explain" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/ApprovalDetailsRow"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/isOutOt"
+                    style="@style/explain_style1"
+                    android:layout_width="wrap_content"
+                    android:text="@string/vantop_isoutot" />
+
+                <ToggleButton
+                    android:id="@+id/isOutOt_tgbtn"
+                    style="@style/toggle_width_height"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/toggle_button"
+                    android:checked="false"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/convert_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/convert_leavecode_click"
+                    style="@style/ApprovalDetailsRow"
+                    android:background="@drawable/item_select">
+
+                    <TextView
+                        android:id="@+id/convert_leavecode"
+                        style="@style/explain_style1"
+                        android:text="@string/vantop_convert_vacation" />
+                    <ImageView
+                        android:id="@+id/iv6"
+                        android:layout_alignBottom="@id/convert_leavecode"
+                        android:layout_alignTop="@id/convert_leavecode"
+                        style="@style/arrow" />
+                    <TextView
+                        android:id="@+id/convert_leavecode_txt"
+                        style="@style/explain_content1"
+                        android:layout_width="match_parent"
+                        android:layout_toLeftOf="@id/iv6"
+                        android:gravity="right"
+                        android:text="@string/vantop_please_select" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/divider_style"
+                    tools:ignore="ContentDescription" />
+
+                <RelativeLayout
+                    style="@style/ApprovalDetailsRow"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/convert_hours"
+                        style="@style/explain_style1"
+                        android:text="@string/vantop_convert_hours" />
+
+                    <TextView
+                        android:id="@+id/hour_txt"
+                        style="@style/explain_content1"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/vantop_hour"
+                        android:textColor="@color/txt_bg" />
+
+                    <EditText
+                        android:id="@+id/convert_hours_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/hour_txt"
+                        android:layout_toStartOf="@+id/hour_txt"
+                        android:background="@null"
+                        android:digits="0123456789."
+                        android:gravity="right|center"
+                        android:maxLength="5"
+                        android:paddingLeft="15dp"
+                        android:singleLine="true"
+                        android:text="0.0"
+                        android:textColor="@color/txt_bg"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/divider_style"
+                    tools:ignore="ContentDescription" />
+
+                <RelativeLayout
+                    style="@style/ApprovalDetailsRow"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:id="@+id/convert_reason_edt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@null"
+                        android:gravity="left|top"
+                        android:hint="@string/vantop_hint_overtime_reason"
+                        android:maxLength="200"
+                        android:minHeight="80dip"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/txt_explain" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/convert_line"
+                style="@style/divider_style"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:id="@+id/attach_file_ll"
+                style="@style/ApprovalDetailsRow"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/explain_style1"
+                    android:text="@string/vantop_attach_file" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="10dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/picsView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/add_pic_img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/icon_addpic_unfocused" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/explain_line"
+                style="@style/divider_style"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+            <Button
+                android:id="@+id/bu_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/caeate_time_btn"
+                android:text="@string/vantop_submit"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ApprovalDetailsRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="explain_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textColor">@color/txt_explain</item>
+    </style>
+
+    <style name="explain_style1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textColor">@color/black_22</item>
+    </style>
+
+    <style name="explain_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/txt_currency</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="explain_content1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">7.5dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:textColor">@color/txt_explain</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="divider_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:background">@color/below_divider</item>
+    </style>
+    <style name="divider_style_5dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:background">@color/below_divider</item>
+    </style>
+
+    <style name="arrow">
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:src">@mipmap/wg_gz_right_icon</item>
+    </style>
+
+    <style name="SingleEditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popup_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_anim_out</item>
+    </style>
+
+    <style name="ApplyDetails">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">22.5dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="toggle_width_height">
+        <item name="android:layout_width">45.9dp</item>
+        <item name="android:layout_height">28.8dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:id="@+id/staff_name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dip"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/staff_no_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/staff_name_txt"
+                    android:layout_below="@id/staff_name_txt"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/staff_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/staff_no_txt"
+                    android:src="@mipmap/user_photo_default_small" />
+            </RelativeLayout>
+
+            <!--<ImageView-->
+                <!--style="@style/divider_style"-->
+                <!--tools:ignore="ContentDescription" />-->
+
+            <RelativeLayout
+                style="@style/ApprovalDetailsRow"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/explain_style1"
+                    android:layout_width="wrap_content"
+                    android:text="@string/card_number" />
+
+                <TextView
+                    android:id="@+id/card_number_txt"
+                    style="@style/explain_content1"
+                    android:layout_alignParentRight="true"
+                    android:text="" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/banckground_color"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/date_rl"
+                style="@style/ApprovalDetailsRow"
+                android:background="@drawable/item_select"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/date"
+                    style="@style/explain_style1"
+                    android:layout_width="wrap_content"
+                    android:text="@string/date" />
+
+                <ImageView
+                    android:id="@+id/iv_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/date"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/date"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/wg_gz_right_icon" />
+
+                <TextView
+                    android:id="@+id/date_txt"
+                    style="@style/explain_content1"
+                    android:layout_toLeftOf="@id/iv_data"
+                    android:text="@string/please_select" />
+            </RelativeLayout>
+
+            <ImageView
+                style="@style/divider_style"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/time_rl"
+                style="@style/ApprovalDetailsRow"
+                android:background="@drawable/item_select"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/explain_style1"
+                    android:layout_width="wrap_content"
+                    android:text="@string/time" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/time"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/time"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/wg_gz_right_icon" />
+
+                <TextView
+                    android:id="@+id/data_txt"
+                    android:layout_toLeftOf="@id/imageView3"
+                    style="@style/explain_content1"
+                    android:text="@string/please_select" />
+            </RelativeLayout>
+
+            <ImageView
+                style="@style/divider_style"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/terminal_rl"
+                style="@style/ApprovalDetailsRow"
+                android:background="@drawable/item_select">
+
+                <TextView
+                    android:id="@+id/terminal"
+                    style="@style/explain_style1"
+                    android:layout_width="wrap_content"
+                    android:text="@string/terminal" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/terminal"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/terminal"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/wg_gz_right_icon" />
+
+                <TextView
+                    android:id="@+id/terminal_txt"
+                    style="@style/explain_content1"
+                    android:layout_toLeftOf="@id/imageView4"
+                    android:text="@string/please_select" />
+            </RelativeLayout>
+
+            <ImageView
+                style="@style/divider_style"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/reason_rl"
+                style="@style/ApprovalDetailsRow"
+                android:background="@drawable/item_select">
+
+                <TextView
+                    android:id="@+id/reason"
+                    style="@style/explain_style1"
+                    android:layout_width="wrap_content"
+                    android:text="@string/reason" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/reason_txt"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/reason_txt"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/wg_gz_right_icon" />
+                <TextView
+                    android:id="@+id/reason_txt"
+                    style="@style/explain_content1"
+                    android:layout_toLeftOf="@id/imageView5"
+                    android:text="@string/please_select" />
+            </RelativeLayout>
+
+            <ImageView
+                style="@style/divider_style"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                style="@style/ApprovalDetailsRow"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/remark_edt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:hint="@string/note"
+                    android:maxLength="200"
+                    android:minHeight="100dip"
+                    android:textColor="#bbbbbb"
+                    android:paddingBottom="5dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp" />
+            </LinearLayout>
+
+            <ImageView
+                style="@style/divider_style"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/attachment"
+                    style="@style/explain_style1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/attachment" />
+
+                <RelativeLayout
+                    android:id="@+id/signcard_create_iv_attachment_pic_container"
+                    android:layout_width="112dp"
+                    android:layout_height="78dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/attachment"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/signcard_create_iv_attachment_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/signcard_create_iv_attachment_pic_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="5dip"
+                        android:src="@mipmap/delete_res" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/signcard_create_iv_add_attachment_pic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/icon_addpic_unfocused" />
+
+            </RelativeLayout>
+
+            <ImageView
+                style="@style/divider_style"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:background="@drawable/btn_register_bg"
+                android:text="@string/personal_submit"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

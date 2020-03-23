@@ -1,0 +1,66 @@
+apply plugin: 'com.android.library'
+apply plugin: 'bugly'
+bugly {
+    appId = "e75fa2d1e9"
+    appKey = "53caa732-3e90-4f6f-9a18-2029950c9d9d"
+    debug = true
+}
+android {
+    compileSdkVersion 28
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        manifestPlaceholders = [
+                GETUI_APP_ID       : "cuIrqZ8qF3AhK6U1gUltM6",
+                GETUI_APP_KEY      : "Y07oh5KIfV6JG4DTGy4qP5",
+                GETUI_APP_SECRET   : "xMSNO2VfHX9se4SCZLlnL",
+                UMENG_CHANNEL_VALUE: "channel_name"
+        ]
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true    //加上这行即可
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':libraries:ShortcutBadger')
+    api 'com.android.support:appcompat-v7:+'
+    api 'com.android.support:design:+'
+    api files('libs/libammsdk.jar')
+    api files('libs/weiboSDKCore_3.1.4.jar')
+    api files('libs/core-3.2.1.jar')
+    api 'com.facebook.rebound:rebound:0.3.8'
+    api 'com.google.code.gson:gson:2.3.1'
+    api 'com.facebook.fresco:fresco:0.12.0'
+    api 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    api 'com.github.HuanTanSheng:EasyPhotos:2.4.0'
+    api 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    //个推
+    api 'com.getui:sdk:2.13.3.0'
+    api 'com.android.support:multidex:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api files('libs/BaiduLBS_Android.jar')
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+//    api 'com.android.volley:volley:1.1.1'
+    api 'com.squareup.okhttp3:okhttp:3.9.1'
+}

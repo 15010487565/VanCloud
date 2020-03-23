@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Theme.CustomDialog1" parent="android:style/Theme.Dialog">
+
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	<style name="App" parent="@android:style/Theme.Light.NoTitleBar">
+	<!--	<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowBackground">@android:color/transparent</item>-->
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+	</style>
+	<style name="DialogItemLargeFont" parent="@android:style/Theme.Holo.Light.Dialog">
+		<item name="android:textSize">24sp</item>
+	</style>
+
+	<!--个别手机(如:三星S-III)切换语言有界面跳动bug -->
+	<style name="SplashAnimation" parent="@android:style/Animation">
+		<item name="android:windowEnterAnimation">@anim/splash</item>
+		<item name="android:windowExitAnimation">@anim/splash</item>
+	</style>
+
+	<style name="SplashTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+		<item name="android:windowAnimationStyle">@style/SplashAnimation</item>
+	</style>
+
+	<style name="Dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+
+	<style name="PickerDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+
+
+	<!-- Application theme. -->
+	<style name="AppThemeBlack" parent="android:Theme.Holo.Light.DarkActionBar">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+	</style>
+
+	<style name="CustomDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+	</style>
+
+	<style name="CustomProgressDialog" parent="@style/CustomDialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+</resources>

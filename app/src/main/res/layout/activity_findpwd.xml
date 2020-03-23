@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/now_phone_unmber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:textColor="@color/order_grey"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/out_line" />
+
+        <RelativeLayout
+            android:id="@+id/rala_chose_country"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/me_item_single">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/register_choose_country"
+                android:textColor="@color/order_black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv_chosed_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/arrow_iv"
+                android:text="@string/register_china"
+                android:textColor="@color/order_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/out_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/phone"
+                android:textColor="@color/order_black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/register_you_num"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="@color/comment_grey"
+                android:textColorHint="@color/comment_grey"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/del_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:padding="10dip"
+                android:src="@drawable/ic_edit_del" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/set_pwd_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/out_line" />
+
+        <LinearLayout
+            android:id="@+id/set_pwd_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/update_pwd"
+                android:textColor="@color/order_black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/set_start_pwd"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="@color/comment_grey"
+                android:textColorHint="@color/comment_grey"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/del_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:padding="10dip"
+                android:src="@drawable/ic_edit_del" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_register_bg"
+            android:text="@string/next_step"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</FrameLayout>

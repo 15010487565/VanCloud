@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List>
+    <Item
+        icon="android.resource://com.vgtech.vancloud/mipmap/icon_order_my"
+        id="action_menu_my_lable"
+        label="android.resource://com.vgtech.vancloud/string/all_orders" />
+    <Item
+        icon="android.resource://com.vgtech.vancloud/mipmap/icon_order_list"
+        id="action_menu_admin"
+        label="android.resource://com.vgtech.vancloud/string/admin_list" />
+</List>

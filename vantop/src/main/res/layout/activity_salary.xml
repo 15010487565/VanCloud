@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/banckground_color">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+        <com.vgtech.common.view.VancloudLoadingLayout
+            android:id="@+id/ll_loadingview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+
+        </com.vgtech.common.view.VancloudLoadingLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+            <!--android:layout_marginTop="10dp"-->
+        <LinearLayout
+            android:id="@+id/ll_container_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--android:background="@mipmap/wg_gz_top_icon_1"-->
+            <TextView
+                android:id="@+id/tv_menu_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"
+                android:padding="10dp"
+                android:text="@string/vantop_date"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray" />
+            <!--android:background="@mipmap/wg_gz_top_icon_2"-->
+            <TextView
+                android:id="@+id/tv_menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"
+                android:padding="10dp"
+                android:text="@string/vantop_item"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray" />
+            <!--android:background="@mipmap/wg_gz_top_icon_1"-->
+            <TextView
+                android:id="@+id/tv_menu_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"
+                android:padding="10dp"
+                android:text="@string/vantop_year"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_menu_close"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@mipmap/wg_gz_top_icon1" />-->
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <TextView
+        android:id="@+id/tv_expand_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/wg_gz_top_icon"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_expand_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/horizontal_three_dot" />
+
+    <View
+        android:id="@+id/v_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"
+        android:visibility="gone" />
+</RelativeLayout>

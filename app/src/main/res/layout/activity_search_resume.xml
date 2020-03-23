@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color">
+
+    <include layout="@layout/title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_single_item">
+
+            <TextView
+                android:id="@+id/tv_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/search_word"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/text_black"
+                 />
+
+            <ImageView
+                android:id="@+id/iv_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_arrow_right" />
+
+            <EditText
+                android:id="@+id/et_search_word"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:hint="@string/hint_search"
+                android:background="@null"
+                android:textColorHint="@color/hint_text_color"
+                android:layout_toLeftOf="@id/iv_01"
+                android:layout_toRightOf="@+id/tv_01"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/grey_text_color"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/education_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_single_item">
+
+            <TextView
+                android:id="@+id/tv_08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/text_black"
+                android:text="@string/recruit_detail_school"
+                 />
+
+
+            <ImageView
+                android:id="@+id/iv_08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_education"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_toLeftOf="@id/iv_08"
+                android:layout_toRightOf="@+id/tv_08"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/grey_text_color"
+                 />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/work_experience_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_single_item">
+
+            <TextView
+                android:id="@+id/tv_09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/text_black"
+                android:text="@string/recruit_detail_job_time"
+                 />
+
+
+            <ImageView
+                android:id="@+id/iv_09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_work_experience"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_toLeftOf="@id/iv_09"
+                android:layout_toRightOf="@+id/tv_09"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/grey_text_color"
+                 />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sex_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_single_item">
+
+            <TextView
+                android:id="@+id/tv_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/text_black"
+                android:text="@string/sex_tv"
+                 />
+
+
+            <ImageView
+                android:id="@+id/iv_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_toLeftOf="@id/iv_02"
+                android:layout_toRightOf="@+id/tv_02"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/grey_text_color"
+                 />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/status_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_single_item">
+
+            <TextView
+                android:id="@+id/tv_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/text_black"
+                android:text="@string/status_tv"
+                 />
+
+
+            <ImageView
+                android:id="@+id/iv_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_toLeftOf="@id/iv_03"
+                android:layout_toRightOf="@+id/tv_03"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/grey_text_color"
+                 />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/place_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_single_item">
+
+            <TextView
+                android:id="@+id/tv_06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/text_black"
+                android:text="@string/place_tv"
+                 />
+
+
+            <ImageView
+                android:id="@+id/iv_06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_toLeftOf="@id/iv_06"
+                android:layout_toRightOf="@+id/tv_06"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/grey_text_color"
+                 />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/category_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_single_item">
+
+            <TextView
+                android:id="@+id/tv_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/text_black"
+                android:text="@string/recruit_detail_sort"
+                 />
+
+
+            <ImageView
+                android:id="@+id/iv_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_toLeftOf="@id/iv_05"
+                android:layout_toRightOf="@+id/tv_05"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/grey_text_color"
+                 />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/industry_category_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_single_item">
+
+            <TextView
+                android:id="@+id/tv_07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/text_black"
+                android:text="@string/recruit_detail_job_sort"
+                 />
+
+
+            <ImageView
+                android:id="@+id/iv_07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_industry_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_toLeftOf="@id/iv_07"
+                android:layout_toRightOf="@+id/tv_07"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/grey_text_color"
+                 />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_register_bg"
+            android:text="@string/vancloud_search"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

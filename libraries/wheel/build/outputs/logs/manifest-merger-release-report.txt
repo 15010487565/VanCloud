@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml:2:1-7:12
+	package
+		ADDED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml:3:7-29
+		INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+		INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml:3:54-79
+		INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+		INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml:3:30-53
+		INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+		INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+uses-sdk
+INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+		ADDED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+		INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+		ADDED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml
+		INJECTED from /Users/mac/Desktop/VanCloud/VanCloud/VanCloud/libraries/wheel/AndroidManifest.xml

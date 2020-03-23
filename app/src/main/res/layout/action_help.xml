@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f7f7f7"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/reply_button_onclick"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_bottom_action">
+
+        <TextView
+            android:id="@+id/reply_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:drawableLeft="@drawable/item_comment_click"
+            android:text="@string/list_item_reply"
+            android:textColor="@color/item_button_text_click" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/praise_button_click"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_bottom_action">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <!--android:src="@mipmap/to_top"-->
+            <ImageView
+                android:id="@+id/img02"
+                android:layout_width="14dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/item_praise_click" />
+
+            <TextView
+                android:id="@+id/praise_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="9dp"
+                android:text="@string/list_item_praise"
+                android:textColor="@drawable/bottom_button_text"
+                android:textSize="12.5sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/more_button_click"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_bottom_action">
+
+        <TextView
+            android:id="@+id/more_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:drawableLeft="@drawable/item_more_click"
+            android:text="@string/help_list_item_more"
+            android:textColor="@color/item_button_text_click" />
+    </RelativeLayout>
+</LinearLayout>

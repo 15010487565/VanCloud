@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NineGridImageView">
+        <attr name="imgGap" format="dimension" />
+    </declare-styleable>
+    <attr name="background_menu_divider" format="reference|color" />
+    <attr name="list_title" format="reference|color" />
+    <attr name="list_subtitle" format="reference|color" />
+    <declare-styleable name="FlowLayout">
+        <attr name="elementSpacing" format="dimension" />
+        <attr name="lineSpacing" format="dimension" />
+        <attr name="flowDirection" format="enum">
+            <enum name="leftToRight" value="0" />
+            <enum name="topDown" value="1" />
+            <enum name="rightToLeft" value="2" />
+            <enum name="bottomUp" value="3" />
+        </attr>
+        <attr name="android:gravity" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_Layout">
+        <attr name="layout_breakLine" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleHeadView">
+        <attr name="circle_head_view_border_width" format="dimension" />
+        <attr name="circle_head_view_border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ShortcutView">
+        <attr name="bgcolor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="slideswitch">
+        <attr name="themeColor" format="color" />
+        <attr name="isOpen" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CountDownTextView">
+        <attr name="secondsInFuture" format="integer" />
+        <attr name="countDownInterval" format="integer" />
+        <attr name="tickString" format="reference" />
+        <attr name="beginString" format="reference" />
+        <attr name="finishString" format="reference" />
+        <attr name="tickTextColor" format="color" />
+        <attr name="beginTextColor" format="color" />
+        <attr name="finishTextColor" format="color" />
+        <attr name="tickBackground" format="reference" />
+        <attr name="beginBackground" format="reference" />
+        <attr name="finishBackground" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectView">
+        <attr name="selectName" format="string" />
+        <attr name="selectValue" format="string" />
+        <attr name="selectNameMarginLeft" format="dimension" />
+        <attr name="selectValueMarginRight" format="dimension" />
+        <attr name="selectTextColor" format="color" />
+        <attr name="selectTextSize" format="dimension" />
+    </declare-styleable>
+</resources>

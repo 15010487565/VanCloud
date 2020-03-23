@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+apply plugin: 'bugly'
+bugly {
+    appId = "e75fa2d1e9"
+    appKey = "53caa732-3e90-4f6f-9a18-2029950c9d9d"
+    debug = true
+}
+android {
+    //noinspection GroovyAssignabilityCheck
+    compileSdkVersion 28
+    //noinspection GroovyAssignabilityCheck
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        manifestPlaceholders = [
+                GETUI_APP_ID       : "cuIrqZ8qF3AhK6U1gUltM6",
+                GETUI_APP_KEY      : "Y07oh5KIfV6JG4DTGy4qP5",
+                GETUI_APP_SECRET   : "xMSNO2VfHX9se4SCZLlnL",
+                UMENG_CHANNEL_VALUE: "channel_name"
+        ]
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true    //加上这行即可
+            }
+        }
+    }
+    sourceSets.main {
+        manifest.srcFile 'AndroidManifest.xml'
+        java.srcDirs = ['src']
+        resources.srcDirs = ['src']
+        res.srcDirs = ['res']
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.vgtech.vancloud.ui.view.pullswipemenulistview.PullToRefreshSwipeMenuListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:listSelector="@drawable/me_item_single"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="pullFromStart"
+            ptr:ptrShowIndicator="false" />
+        <com.vgtech.common.view.VancloudLoadingLayout
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

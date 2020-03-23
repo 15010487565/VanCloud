@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/bg_title">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_actionbar"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/actbar_home_up_indicator_white_normal" />
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp">
+
+        <SearchView
+            android:id="@+id/searchview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:closeIcon="@mipmap/abc_ic_clear_mtrl_alpha"
+            android:queryHint="@string/search"
+            android:searchHintIcon="@mipmap/abc_ic_search_api_mtrl_alpha"
+            android:searchIcon="@mipmap/abc_ic_search_api_mtrl_alpha"></SearchView>
+
+    </LinearLayout>
+</LinearLayout>

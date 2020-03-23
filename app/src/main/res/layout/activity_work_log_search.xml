@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/shade_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/diaphaneity_black"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/work_log_search_sort_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/work_log_search_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/text_search_sort"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:id="@+id/work_log_search_sort_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/work_log_search_sort_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_bg_search_sort"
+                    android:button="@null"
+                    android:checked="true"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="4dp"
+                    android:text="@string/text_sort_time"
+                    android:textColor="@drawable/selector_text_color_search_sort"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/work_log_search_sort_staff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/selector_bg_search_sort"
+                    android:button="@null"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="4dp"
+                    android:text="@string/text_sort_employee"
+                    android:textColor="@drawable/selector_text_color_search_sort"
+                    android:textSize="14sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/work_log_search_sort_parent"
+        android:background="#bfbfbf" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/work_log_search_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/work_log_search_sort_parent"
+        android:layout_marginTop="1dp"
+        android:background="#F2F2F2"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+    <com.vgtech.common.view.VancloudLoadingLayout
+        android:id="@+id/work_log_search_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/work_log_calendar_parent"
+        android:visibility="gone">
+
+    </com.vgtech.common.view.VancloudLoadingLayout>
+
+    <include layout="@layout/title_layout" />
+
+</RelativeLayout>

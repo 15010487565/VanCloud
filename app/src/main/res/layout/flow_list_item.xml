@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bgitem"
+        android:orientation="vertical">
+
+
+        <!-- 头部 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="37dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:text="@string/task_receiver"
+                android:textColor="@color/text_black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/reciver_names"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:gravity="center|left"
+                android:minHeight="37dp"
+                android:paddingBottom="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="13sp" />
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/reciver_num"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="37dp"-->
+            <!--android:gravity="center|left"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:textColor="@color/text_black"-->
+            <!--android:textSize="13sp" />-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/out_line"
+            android:visibility="gone" />
+
+        <include layout="@layout/list_item_top_layout" />
+
+        <!-- 头部 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color" />
+
+        <include layout="@layout/list_item_middle_layout" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color" />
+
+        <include layout="@layout/list_item_bottom_layout" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/out_line" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/finish_logo"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

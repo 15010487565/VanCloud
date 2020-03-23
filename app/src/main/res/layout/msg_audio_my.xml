@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@id/messages_item_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@id/avatar"
+        android:layout_width="@dimen/user_icon_wh"
+        android:layout_height="@dimen/user_icon_wh"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/messages_item_time"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@null" />
+
+
+    <TextView
+        android:id="@+id/msg_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messages_item_time"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@id/avatar"
+        android:background="@drawable/wg_xx_chat_right"
+        android:drawableRight="@drawable/msg_audio_my_icon"
+        android:minWidth="60dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@id/messages_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messages_item_time"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/msg_audio"
+        android:background="@drawable/msg_time_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/messages_item_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messages_item_time"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/messages_item_content"
+        android:src="@drawable/msg_fasongshibai"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

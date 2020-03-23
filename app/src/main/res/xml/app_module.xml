@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List>
+    <!--    <Appmenu
+            name="android.resource://com.vgtech.vancloud/string/lable_notice"
+            color="android.resource://com.vgtech.vancloud/color/app_notice"
+            icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_notice"
+            tag="notice" />-->
+   <!--申请-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_apply"
+        color="android.resource://com.vgtech.vancloud/color/app_apply"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_approve"
+        tag="shenqing" />
+
+    <!--审批-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_approve"
+        color="android.resource://com.vgtech.vancloud/color/app_approval_shenpi"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_approve_shenpi"
+        tag="work_flow" />
+
+    <!--日程-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_schedule"
+        color="android.resource://com.vgtech.vancloud/color/app_schedule"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_schedule"
+        tag="calendar" />
+
+    <!--任务-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_task"
+        color="android.resource://com.vgtech.vancloud/color/app_task"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_task"
+        tag="task" />
+
+    <!--工作汇报-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_report"
+        color="android.resource://com.vgtech.vancloud/color/app_report"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_workreport"
+        tag="work_reportting" />
+
+    <!--分享-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_shared"
+        color="android.resource://com.vgtech.vancloud/color/app_share"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_share"
+        tag="topic" />
+
+    <!--帮帮-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_helper"
+        color="android.resource://com.vgtech.vancloud/color/app_help"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_help"
+        tag="help" />
+
+    <!--订单管理-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_order"
+        color="android.resource://com.vgtech.vancloud/color/app_order"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_order"
+        tag="order" />
+
+    <!--视频会议-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_vidio_metting"
+        color="android.resource://com.vgtech.vancloud/color/app_meeting"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_meeting"
+        tag="meeting" />
+
+    <!--打卡-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_clock_out"
+        color="android.resource://com.vgtech.vancloud/color/app_clock_out"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_clock_out"
+        tag="clock_out" />
+
+    <!--考勤-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_attendance"
+        color="android.resource://com.vgtech.vancloud/color/app_checkin"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_check_in"
+        tag="kaoqin" />
+
+    <!--背景调查-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_investigate"
+        color="android.resource://com.vgtech.vancloud/color/app_beidiao"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_beidiao"
+        tag="beidiao" />
+
+    <!--招聘-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_recruit"
+        color="android.resource://com.vgtech.vancloud/color/app_recruit"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_recruit"
+        tag="zhaopin" />
+
+    <!--工资-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_salary"
+        color="android.resource://com.vgtech.vancloud/color/app_salary"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_salary"
+        tag="salary" />
+
+    <!--流程-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_flow"
+        color="android.resource://com.vgtech.vancloud/color/app_flow"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_flow"
+        tag="flow" />
+
+    <!--问卷-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_vote"
+        color="android.resource://com.vgtech.vancloud/color/app_vote"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_vote"
+        tag="vote" />
+
+    <!--内购-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_neigou"
+        color="android.resource://com.vgtech.vancloud/color/app_neigou"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_neigou"
+        tag="neigou" />
+
+    <!--心理体验-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_xinlitijian"
+        color="android.resource://com.vgtech.vancloud/color/app_xinlitijian"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_xinlitijian"
+        tag="xinlitijian" />
+
+    <!--绩效-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_jixiao"
+        color="android.resource://com.vgtech.vancloud/color/app_jixiao"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_jixiao"
+        tag="jixiao" />
+
+    <!--领导查询-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_leaderquery"
+        color="android.resource://com.vgtech.vancloud/color/app_leaderquery"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_leaderquery"
+        tag="leadersearch" />
+
+    <!--工作日志-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_worklog"
+        color="android.resource://com.vgtech.vancloud/color/app_worklog"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_worklog"
+        tag="gongzuorizhi" />
+
+    <!--报表-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_report_form"
+        color="android.resource://com.vgtech.vancloud/color/report_forms"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_report_forms"
+        tag="secdefreport" />
+
+    <!--积分-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_integral"
+        color="android.resource://com.vgtech.vancloud/color/app_integral"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_integral"
+        tag="integral" />
+
+    <!--附加扣除-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_deduction"
+        color="android.resource://com.vgtech.vancloud/color/app_tax"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_tax"
+        tag="tax" />
+
+    <!--万客激极速背调-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_background_check"
+        color="android.resource://com.vgtech.vancloud/color/app_beidiao"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_beidiao"
+        tag="bgdiaocha" />
+
+    <!--入职审批-->
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/lable_entryapprove"
+        color="android.resource://com.vgtech.vancloud/color/app_entryapprove"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_app_entryapprove"
+        tag="entryapprove" />
+</List>

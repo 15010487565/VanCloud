@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:id="@+id/adsRl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ads_img_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/text_view_jump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="32dp"
+        android:background="#55000000"
+        android:paddingBottom="6dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:text="@string/jump_over"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:visibility="visible" />
+</RelativeLayout>

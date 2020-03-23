@@ -1,0 +1,1329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--职位模板-->
+            <RelativeLayout
+                android:id="@+id/job_module_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <TextView
+                    android:id="@+id/tv_200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_detail_jobmodule"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_job_module"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_200"
+                    android:layout_toRightOf="@+id/tv_200"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_hint_jobmodule"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--职位名称-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:id="@+id/tv_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/job_name"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/iv_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/et_job_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_01"
+                    android:layout_toRightOf="@+id/tv_01"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/hint_input_position"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+            <!--目标部门-->
+            <RelativeLayout
+                android:id="@+id/depart_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:id="@+id/tv_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_detail_department"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_depart"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_02"
+                    android:layout_toRightOf="@+id/tv_02"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_hint_department"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--汇报对象-->
+            <RelativeLayout
+                android:id="@+id/report_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:id="@+id/tv_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_detail_tosay"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_report"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_03"
+                    android:layout_toRightOf="@+id/tv_03"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_hint_tosay"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--招聘人数-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/lable_recruit_plat_number"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/lable_recruit_plat_number_perple"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/et_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="-5dp"
+                    android:layout_toLeftOf="@id/tv_num"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/recruit_detail_hint_num"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--职能类别-->
+            <RelativeLayout
+                android:id="@+id/category_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:id="@+id/tv_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_detail_sort"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_05"
+                    android:layout_toRightOf="@+id/tv_05"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_hint_sort"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--发布城市-->
+            <RelativeLayout
+                android:id="@+id/city_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:id="@+id/tv_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_detail_city"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_04"
+                    android:layout_toRightOf="@+id/tv_04"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_hint_city"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--上班地址-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:id="@+id/tv_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_detail_job_city_address"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/iv_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/et_work_city_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_11"
+                    android:layout_toRightOf="@+id/tv_11"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_job_city_address_hiti"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+            <!--工作性质-->
+            <RelativeLayout
+                android:id="@+id/type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:id="@+id/tv_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_detail_type"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_06"
+                    android:layout_toRightOf="@+id/tv_06"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_hint_type"
+                    android:singleLine="true"
+                    android:text="@string/vancloud_full_time"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!-- 行业类别-->
+            <RelativeLayout
+                android:id="@+id/industry_category_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_detail_job_sort"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_industry_category"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_07"
+                    android:layout_toRightOf="@+id/tv_07"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_job_hint_sort"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--最低学历-->
+            <RelativeLayout
+                android:id="@+id/education_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:id="@+id/tv_08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_detail_education"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_education"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_08"
+                    android:layout_toRightOf="@+id/tv_08"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_hint_education"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--工作年限-->
+            <RelativeLayout
+                android:id="@+id/work_experience_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:id="@+id/tv_09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_detail_job_year"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_work_experience"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_09"
+                    android:layout_toRightOf="@+id/tv_09"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_hint_job_year"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--工作地区（已被删除暂时隐藏）-->
+            <RelativeLayout
+                android:id="@+id/work_city_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_detail_job_city"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_work_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_10"
+                    android:layout_toRightOf="@+id/tv_10"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_job_hint_city"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--职位月薪-->
+            <RelativeLayout
+                android:id="@+id/salary_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:id="@+id/tv_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_detail_money_pay"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_salary"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_12"
+                    android:layout_toRightOf="@+id/tv_12"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_money_hint_pay"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--岗位职责-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_single_item">
+
+                <RelativeLayout
+                    android:id="@+id/rl_choose_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/resume_star_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/recruit_detail_des"
+                        android:textColor="@color/text_black"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/et_choose_model"
+                    style="@style/item_editText"
+                    android:layout_below="@id/rl_choose_model"
+                    android:layout_marginTop="0dp"
+                    android:hint="@string/recruit_detail_hint"
+                    android:maxLength="3000"
+                    android:maxLines="5"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable" />
+
+            </RelativeLayout>
+            <!--任职要求-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_single_item">
+
+                <RelativeLayout
+                    android:id="@+id/rl_demand"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/resume_star_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/recruit_detail_require"
+                        android:textColor="@color/text_black"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/et_demand"
+                    style="@style/item_editText"
+                    android:layout_below="@id/rl_demand"
+                    android:layout_marginTop="0dp"
+                    android:hint="@string/recruit_detail_hint"
+                    android:maxLength="3000"
+                    android:maxLines="5"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable" />
+            </RelativeLayout>
+            <!--福利待遇-->
+            <RelativeLayout
+                android:id="@+id/welfare_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <TextView
+                    android:id="@+id/tv_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_detail_fuli"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_welfare"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_13"
+                    android:layout_toRightOf="@+id/tv_13"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_hint_fuli"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--语言1-->
+            <RelativeLayout
+                android:id="@+id/language_one_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <TextView
+                    android:id="@+id/tv_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_language_one"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_language_one"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_20"
+                    android:layout_toRightOf="@+id/tv_20"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_language_hint"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--掌握程度-->
+            <RelativeLayout
+                android:id="@+id/language_one_mastery_degree_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <TextView
+                    android:id="@+id/tv_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_mastery_degree"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_language_one_mastery_degree"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_21"
+                    android:layout_toRightOf="@+id/tv_21"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_mastery_degree_hint"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--语言2-->
+            <RelativeLayout
+                android:id="@+id/language_two_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <TextView
+                    android:id="@+id/tv_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_language_two"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_language_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_22"
+                    android:layout_toRightOf="@+id/tv_22"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_language_hint"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--掌握程度-->
+            <RelativeLayout
+                android:id="@+id/language_two_mastery_degree_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <TextView
+                    android:id="@+id/tv_23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_mastery_degree"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_language_two_mastery_degree"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_23"
+                    android:layout_toRightOf="@+id/tv_23"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_mastery_degree_hint"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--专业1-->
+            <RelativeLayout
+                android:id="@+id/zhuanye_one_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <TextView
+                    android:id="@+id/tv_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_zhuanye_one"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_zhuanye_one"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_24"
+                    android:layout_toRightOf="@+id/tv_24"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_zhuanye_hint"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+            <!--专业2-->
+            <RelativeLayout
+                android:id="@+id/zhuanye_two_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item">
+
+                <TextView
+                    android:id="@+id/tv_25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/recruit_zhuanye_two"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_zhuanye_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_25"
+                    android:layout_toRightOf="@+id/tv_25"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_zhuanye_hint"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_start_time"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/btn_single_item"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/start_time"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/start_complete_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_hint_starttime"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_end_time"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/btn_single_item"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/end_time"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/end_complete_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/recruit_detail_hint_endtime"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/banckground_color" />
+
+
+            <ViewStub
+                android:id="@+id/vs_approval"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/approval"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/select_user_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="@color/banckground_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_cc_people"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/lable_chaosong"
+                        android:textColor="@color/text_black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cc_people_count"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_marginRight="10dp"
+                        android:drawableRight="@drawable/icon_arrow_right"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/lable_enable"
+                        android:textColorHint="@color/lable_unenable"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <com.vgtech.vancloud.ui.common.publish.internal.NoScrollGridView
+                    android:id="@+id/cc_people_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="5"
+                    android:scrollbars="none" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="@color/banckground_color" />
+            </LinearLayout>
+            <!--是否委托万客-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_item">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/lable_vg_recruit"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_employ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/rb_top"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#eaeaea" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dip"
+                android:background="@color/banckground_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/document" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_register_bg"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <com.handmark.pulltorefresh.library.PullToRefreshListView-->
+<!--        android:id="@+id/list_punchcard_record"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:divider="@drawable/list_divider_10"-->
+<!--        android:dividerHeight="0.5dp"-->
+<!--        android:scrollbars="none"-->
+<!--        android:showDividers="none" />-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:id="@+id/recycler_view"/>
+
+
+    <com.vgtech.common.view.VancloudLoadingLayout
+        android:id="@+id/ll_loadingview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+
+    </com.vgtech.common.view.VancloudLoadingLayout>
+</RelativeLayout>

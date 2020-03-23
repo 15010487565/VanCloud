@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List>
+    <!--    全部-->
+<!--    <Item-->
+<!--        icon="android.resource://com.vgtech.vancloud/mipmap/icon_todo_all"-->
+<!--        label="android.resource://com.vgtech.vancloud/string/all"-->
+<!--        id="action_menu_all"/>-->
+    <!--    休假-->
+<!--    <Item-->
+<!--        icon="android.resource://com.vgtech.vancloud/mipmap/icon_todo_leave"-->
+<!--        id="action_menu_leave"-->
+<!--        label="android.resource://com.vgtech.vancloud/string/todo_menu_leave" />-->
+
+    <!--    加班-->
+<!--    <Item-->
+<!--        icon="android.resource://com.vgtech.vancloud/mipmap/icon_todo_overtime"-->
+<!--        id="action_menu_overtime"-->
+<!--        label="android.resource://com.vgtech.vancloud/string/todo_menu_overtime" />-->
+
+    <!--    签卡-->
+<!--    <Item-->
+<!--        icon="android.resource://com.vgtech.vancloud/mipmap/icon_todo_signcard"-->
+<!--        id="action_menu_signcard"-->
+<!--        label="android.resource://com.vgtech.vancloud/string/change_sign" />-->
+
+    <!-- 流程-->
+    <Item
+        icon="android.resource://com.vgtech.vancloud/mipmap/icon_flow"
+        id="flow"
+        label="android.resource://com.vgtech.vancloud/string/lable_flow" />
+
+    <!--    日程-->
+    <Item
+        icon="android.resource://com.vgtech.vancloud/mipmap/icon_todo_sch"
+        id="calendar"
+        label="android.resource://com.vgtech.vancloud/string/lable_schedule" />
+
+    <!--    任务-->
+    <Item
+        icon="android.resource://com.vgtech.vancloud/mipmap/icon_todo_task"
+        id="task"
+        label="android.resource://com.vgtech.vancloud/string/lable_task" />
+
+    <!--    工作汇报-->
+    <Item
+        icon="android.resource://com.vgtech.vancloud/mipmap/icon_todo_port"
+        id="work_reportting"
+        label="android.resource://com.vgtech.vancloud/string/lable_report" />
+
+    <!--<Item-->
+        <!--icon="android.resource://com.vgtech.vancloud/mipmap/bind_member_name"-->
+        <!--tag="action_menu_staff_apply"-->
+        <!--name="android.resource://com.vgtech.vancloud/string/staff_apply" />-->
+
+    <!--问卷-->
+    <Item
+
+        icon="android.resource://com.vgtech.vancloud/mipmap/icon_vote"
+        id="vote"
+        label="android.resource://com.vgtech.vancloud/string/lable_vote"
+        />
+
+    <!--入职审批-->
+    <Item
+
+        icon="android.resource://com.vgtech.vancloud/mipmap/icon_entryapprove"
+        id="entryapprove"
+        label="android.resource://com.vgtech.vancloud/string/lable_entryapprove"
+        />
+</List>

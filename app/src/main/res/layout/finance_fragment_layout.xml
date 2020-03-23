@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/image_01"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:src="@mipmap/order_money" />
+
+            <TextView
+                android:id="@+id/text_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_01"
+                android:gravity="center"
+                android:text="@string/order_balance_text"
+                android:textColor="@color/order_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_01"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:textColor="@color/order_money"
+                android:textSize="24sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/order_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view01"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_button">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/order_pay_img"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="@string/finance_order_pay"
+                    android:textColor="@color/order_black"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.2dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/order_line" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/order_management"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/order_pay"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_button">
+
+                <View
+                    android:layout_width="0.2dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/order_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/order_management_img"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="@string/finance_order_management"
+                    android:textColor="@color/order_black"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

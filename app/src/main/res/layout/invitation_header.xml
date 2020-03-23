@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/add_mode" />
+
+    <RelativeLayout
+        android:id="@+id/rl_weixin_invite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/me_item_single">
+
+        <ImageView
+            android:id="@+id/iv_weixin_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/round_contacts_green"
+            android:src="@mipmap/weixin_invite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_weixin_invite"
+            android:text="@string/weixin_invite"
+            android:textColor="@color/order_black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_number_invite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/me_item_single">
+
+        <ImageView
+            android:id="@+id/iv_number_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/round_contacts_red"
+            android:src="@mipmap/phone_invite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_number_invite"
+            android:text="@string/phone_number_invite"
+            android:textColor="@color/order_black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="70dp"
+            android:background="@color/line_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_webpage_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/me_item_single">
+
+        <ImageView
+            android:id="@+id/iv_webpage_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/round_contacts_bule"
+            android:src="@mipmap/web_invite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_webpage_add"
+            android:text="@string/webpage_add"
+            android:textColor="@color/order_black"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/contacts_add" />
+</LinearLayout>

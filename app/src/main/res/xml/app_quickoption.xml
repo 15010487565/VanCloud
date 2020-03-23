@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List>
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/app_quickoption_approve"
+        color="android.resource://com.vgtech.vancloud/color/app_approval"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_approve"
+        tag="vancloud_flow" />
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/app_quickoption_leave"
+        color="android.resource://com.vgtech.vancloud/color/app_leave"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_leave"
+        tag="vancloud_holiday" />
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/app_quickoption_recruit"
+        color="android.resource://com.vgtech.vancloud/color/app_recruit"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_recruit"
+        tag="vancloud_zhaopin" />
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/app_quickoption_leave"
+        color="android.resource://com.vgtech.vancloud/color/app_leave"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_leave"
+        tag="shenqing_vantop_holiday" />
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/app_quickoption_addwork"
+        color="android.resource://com.vgtech.vancloud/color/app_notice"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_overtime"
+        tag="shenqing_extra_work" />
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/app_quickoption_signcard"
+        color="android.resource://com.vgtech.vancloud/color/app_clock_out"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_signcard"
+        tag="shenqing_sign_card" />
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/app_quickoption_task"
+        color="android.resource://com.vgtech.vancloud/color/app_task"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_task"
+        tag="task" />
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/app_quickoption_schedule"
+        color="android.resource://com.vgtech.vancloud/color/app_schedule"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_schedule"
+        tag="calendar" />
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/app_quickoption_workreport"
+        color="android.resource://com.vgtech.vancloud/color/app_report"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_workreport"
+        tag="work_reportting" />
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/app_quickoption_share"
+        color="android.resource://com.vgtech.vancloud/color/app_share"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_share"
+        tag="topic" />
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/start_meeting"
+        color="android.resource://com.vgtech.vancloud/color/meeting_create"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_meeting_create"
+        tag="meeting:create" />
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/app_quickoption_meeting_appointment"
+        color="android.resource://com.vgtech.vancloud/color/meeting_appointment"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_meeting_appointment"
+        tag="meeting:appointment" />
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/app_quickoption_beidiao"
+        color="android.resource://com.vgtech.vancloud/color/app_beidiao"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_beidiao"
+        tag="investigate:start" />
+    <Appmenu
+        name="android.resource://com.vgtech.vancloud/string/app_quickoption_help"
+        color="android.resource://com.vgtech.vancloud/color/app_help"
+        icon="android.resource://com.vgtech.vancloud/mipmap/app_quick_help"
+        tag="help" />
+
+</List>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@id/avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="9dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="64.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@id/messages_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@id/messages_item_time"
+        android:layout_toRightOf="@id/avatar"
+        android:singleLine="true"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@id/messages_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@id/messages_item_right_btn"
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@id/messages_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messages_item_name"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@id/messages_item_right_btn"
+        android:layout_toRightOf="@id/avatar"
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@id/messages_item_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/wg_gz_next" />
+
+</RelativeLayout>

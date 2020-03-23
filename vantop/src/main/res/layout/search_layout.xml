@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/new_option"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/new_option_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:text="@string/vantop_approval"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/new_option_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawableRight="@mipmap/icon_arrow_right_black"
+            android:gravity="center|right"
+            android:text="@string/vantop_all"
+            android:textColor="@color/comment_grey" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/new_option1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/new_option_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:text="@string/vantop_option"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/new_option_content1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawableRight="@mipmap/icon_arrow_right_black"
+            android:gravity="center|right"
+            android:text="@string/vantop_please_select"
+            android:textColor="@color/comment_grey" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.25dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/out_line" />
+
+    <LinearLayout
+        android:id="@+id/timeYM_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:text="@string/vantop_select_time"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/timeYm"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawableRight="@mipmap/icon_arrow_right_black"
+            android:gravity="center|right"
+            android:paddingRight="12dp"
+            android:text="@string/vantop_nothing"
+            android:textColor="@color/comment_grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/start_time_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/me_item_single">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:text="@string/vantop_start_time"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawableRight="@mipmap/icon_arrow_right_black"
+            android:gravity="center|right"
+            android:text="@string/vantop_nothing"
+            android:textColor="@color/comment_grey" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.25dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/end_time_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/me_item_single">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:text="@string/vantop_end_time"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawableRight="@mipmap/icon_arrow_right_black"
+            android:gravity="center|right"
+            android:text="@string/vantop_nothing"
+            android:textColor="@color/comment_grey" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.25dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="7dp">
+
+        <TextView
+            android:id="@+id/cancle_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:background="@drawable/search_button_bg"
+            android:text="@string/vantop_cancle"
+            android:textColor="@drawable/search_text_bg"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/confirm_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:background="@drawable/search_button_bg"
+            android:text="@string/vantop_confirm_01"
+            android:textColor="@drawable/search_text_bg"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.25dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/out_line" />
+
+</LinearLayout>

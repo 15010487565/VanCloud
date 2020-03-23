@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sub_work_log_listview_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#F2F2F2"
+        android:orientation="vertical">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/sub_work_log_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F2F2F2"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <Button
+            android:id="@+id/sub_work_log_revoke_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_round_angle_rect"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/vantop_undo"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <com.vgtech.common.view.VancloudLoadingLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/calendar_viewpager"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/shade_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/diaphaneity_black"
+            android:visibility="gone" />
+
+    </com.vgtech.common.view.VancloudLoadingLayout>
+
+    <include layout="@layout/title_layout" />
+</RelativeLayout>

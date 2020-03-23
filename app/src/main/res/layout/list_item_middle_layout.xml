@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mid_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="60dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/line_dash"
+        android:layerType="software" />
+
+    <TextView
+        android:id="@+id/work_report_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/comment_blue"
+        android:textSize="@dimen/content_size"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/text_padding"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/resumeinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/resume_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/arrow"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/amount"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/amount"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:src="@mipmap/icon_arrow_right_black"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/resume_count"
+            android:layout_marginTop="7dp"
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/content_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/split_list"
+        android:layout_marginTop="@dimen/padding"
+        android:paddingBottom="@dimen/padding"
+        android:paddingRight="10dp"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/content_size" />
+
+
+    <TextView
+        android:id="@+id/click_to_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/split_list"
+        android:gravity="right"
+        android:paddingBottom="@dimen/padding"
+        android:paddingRight="10dp"
+        android:text="@string/to_details"
+        android:textColor="@color/bg_title"
+        android:textSize="@dimen/content_size"
+        android:visibility="gone" />
+
+    <com.vgtech.common.view.NoScrollGridview
+        android:id="@+id/imagegridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/padding"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:verticalSpacing="5dp"
+        android:visibility="gone" />
+
+
+    <com.vgtech.common.view.NoScrollListview
+        android:id="@+id/voice_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/split_list"
+        android:layout_marginRight="10dp"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_address_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:textColor="@color/comment_grey"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding"
+        android:layout_marginTop="@dimen/padding"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/left_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/comment_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/right_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/comment_grey"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+</LinearLayout>

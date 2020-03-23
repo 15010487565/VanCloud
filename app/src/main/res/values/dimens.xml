@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icon_width">88dip</dimen>
+    <dimen name="icon_height">88dip</dimen>
+    <dimen name="user_icon">35dip</dimen>
+    <dimen name="actionbar_height">50.5dp</dimen>
+    <dimen name="actionbar_content_height">47.5dp</dimen>
+    <dimen name="tabbar_height">65.5dp</dimen>
+    <dimen name="group_mass_textSize">22sp</dimen>
+    <dimen name="home_textSize">18sp</dimen>
+    <dimen name="login_retrievePassword_textSize">18sp</dimen>
+    <dimen name="msg_content_width">210dp</dimen>
+    <dimen name="user_icon_wh">50dip</dimen>
+    <dimen name="namesize">15dip</dimen>
+    <dimen name="split">12dip</dimen>
+    <dimen name="padding">5dip</dimen>
+    <dimen name="split_list">2dip</dimen>
+    <dimen name="split_other">7dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+
+    <dimen name="name_size">15dp</dimen>
+    <dimen name="content_size">14dp</dimen>
+
+
+    <!--  listview -->
+    <dimen name="listview_item_width">145dp</dimen>
+    <dimen name="listview_item_height">130dp</dimen>
+    <dimen name="listview_bottom_padding">50dp</dimen>
+    <dimen name="directory_browser_item_size">40dp</dimen>
+
+    <dimen name="text_size_23">23dp</dimen>
+    <dimen name="text_size_30">30dp</dimen>
+    <dimen name="text_size_10">10dp</dimen>
+    <dimen name="text_size_11">11dp</dimen>
+    <dimen name="text_size_11.5">11.5dp</dimen>
+    <dimen name="text_size_12">12dp</dimen>
+    <dimen name="text_size_13">13.3dp</dimen>
+    <dimen name="text_size_14">14dp</dimen>
+    <dimen name="text_size_15">15dp</dimen>
+    <dimen name="text_size_16">16dp</dimen>
+    <dimen name="text_size_18">18.6dp</dimen>
+    <dimen name="text_size_20">20dp</dimen>
+    <dimen name="text_size_21">21dp</dimen>
+    <dimen name="text_size_22">22dp</dimen>
+    <dimen name="text_size_19">19dp</dimen>
+    <dimen name="text_size_25">25dp</dimen>
+    <!-- common dialog -->
+    <dimen name="dialog_width">200dp</dimen>
+    <dimen name="dialog_title_height">48dp</dimen>
+    <dimen name="dialog_title_icon_margin">18dp</dimen>
+    <dimen name="dialog_btn_height">52dp</dimen>
+    <dimen name="dialog_btn_magrin_left">15dp</dimen>
+    <dimen name="dialog_btn_magrin_right">15dp</dimen>
+    <dimen name="dialog_btn_magrin_top">24dp</dimen>
+    <dimen name="dialog_edit_padding_left">15dp</dimen>
+    <dimen name="dialog_edit_padding_right">37dp</dimen>
+    <dimen name="dialog_edit_height">45dp</dimen>
+    <dimen name="dialog_edit_delete_margin_right">22.5dp</dimen>
+    <dimen name="dialog_title_text">15sp</dimen>
+    <dimen name="dialog_edit_text">18sp</dimen>
+    <dimen name="dialog_edit_delete_leght">27dp</dimen>
+    <dimen name="progress_size">20dp</dimen>
+</resources>

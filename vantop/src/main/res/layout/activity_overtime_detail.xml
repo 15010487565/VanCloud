@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/bg_titlebar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/punchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="14dp"
+                    android:background="@color/white">
+                    <RelativeLayout
+                        android:id="@+id/top_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dip">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/staff_img"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="15dp"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/staff_name_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="8dip"
+                            android:layout_toRightOf="@id/staff_img"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_currency"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/state_explain_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/staff_name_txt"
+                            android:layout_below="@id/staff_name_txt"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_explain"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                    <LinearLayout
+                        style="@style/ApprovalDetailsRow">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/vantop_overtime_name" />
+
+                        <TextView
+                            android:id="@+id/overtime_name"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+                    <!--<ImageView-->
+                        <!--style="@style/divider_style"-->
+                        <!--tools:ignore="ContentDescription" />-->
+
+                    <LinearLayout style="@style/ApprovalDetailsRow">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/vantop_overtime_type" />
+
+                        <TextView
+                            android:id="@+id/overtime_type_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <!--<ImageView-->
+                        <!--style="@style/divider_style"-->
+                        <!--tools:ignore="ContentDescription" />-->
+
+                    <LinearLayout
+                        android:id="@+id/shift_ll"
+                        style="@style/ApprovalDetailsRow"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/vantop_shift" />
+
+                        <TextView
+                            android:id="@+id/shift_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/shift_line"
+                        style="@style/divider_style"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout style="@style/ApprovalDetailsRow">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/apply_time" />
+
+                        <TextView
+                            android:id="@+id/apply_time_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <!--<ImageView-->
+                        <!--style="@style/divider_style"-->
+                        <!--tools:ignore="ContentDescription" />-->
+
+                    <LinearLayout style="@style/ApprovalDetailsRow">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/vantop_overtime_data" />
+
+                        <TextView
+                            android:id="@+id/overtime_time_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <!--<ImageView-->
+                        <!--style="@style/divider_style"-->
+                        <!--tools:ignore="ContentDescription" />-->
+
+                    <LinearLayout style="@style/ApprovalDetailsRow">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/vantop_overtime_num" />
+
+                        <TextView
+                            android:id="@+id/overtime_num_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <!--<ImageView-->
+                        <!--style="@style/divider_style"-->
+                        <!--tools:ignore="ContentDescription" />-->
+
+                    <LinearLayout style="@style/ApprovalDetailsRow">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/vantop_deduceat_num" />
+
+                        <TextView
+                            android:id="@+id/deduceat_num_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0.5dp"-->
+                        <!--android:background="@color/below_divider"-->
+                        <!--tools:ignore="ContentDescription" />-->
+
+                    <LinearLayout style="@style/ApprovalDetailsRow">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/vantop_reason" />
+
+                        <TextView
+                            android:id="@+id/overtime_reason_txt"
+                            style="@style/explain_content"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <!--<ImageView-->
+                        <!--style="@style/divider_style"-->
+                        <!--tools:ignore="ContentDescription" />-->
+
+                    <LinearLayout
+                        style="@style/ApprovalDetailsRow">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/vantop_isoutot" />
+
+                        <TextView
+                            android:id="@+id/isoutot_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0.5dp"-->
+                        <!--android:background="@color/below_divider"-->
+                        <!--tools:ignore="ContentDescription" />-->
+
+                    <LinearLayout
+                        android:id="@+id/convertLeave_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout style="@style/ApprovalDetailsRow">
+
+                            <TextView
+                                style="@style/explain_style"
+                                android:text="@string/vantop_convert_leavecode" />
+
+                            <TextView
+                                android:id="@+id/convert_leavecode_txt"
+                                style="@style/explain_content" />
+                        </LinearLayout>
+
+                        <!--<ImageView-->
+                            <!--style="@style/divider_style"-->
+                            <!--tools:ignore="ContentDescription" />-->
+
+                        <LinearLayout style="@style/ApprovalDetailsRow">
+
+                            <TextView
+                                style="@style/explain_style"
+                                android:text="@string/vantop_convert_hours" />
+
+                            <TextView
+                                android:id="@+id/convert_hours_txt"
+                                style="@style/explain_content" />
+                        </LinearLayout>
+
+                        <!--<ImageView-->
+                            <!--style="@style/divider_style"-->
+                            <!--tools:ignore="ContentDescription" />-->
+
+                        <LinearLayout style="@style/ApprovalDetailsRow">
+
+                            <TextView
+                                style="@style/explain_style"
+                                android:text="@string/vantop_convert_reason" />
+
+                            <TextView
+                                android:id="@+id/convert_reason_txt"
+                                style="@style/explain_content" />
+                        </LinearLayout>
+
+                        <!--<ImageView-->
+                            <!--style="@style/divider_style"-->
+                            <!--tools:ignore="ContentDescription" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/picsLl"
+                        style="@style/ApprovalDetailsRow"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/vantop_attach_file" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:id="@+id/picsView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                tools:ignore="UselessLeaf" />
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/black_22"
+                        android:text="@string/vantop_approval" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/explain_line"
+                    style="@style/divider_style"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+                <com.vgtech.common.view.NoScrollListview
+                    android:id="@+id/approval_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="0dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/status_img"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:src="@mipmap/approvaling_img" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/vantop_list_item_bottom_layout" />
+
+    <com.vgtech.common.view.VancloudLoadingLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/banckground_color"
+        android:visibility="gone">
+
+
+    </com.vgtech.common.view.VancloudLoadingLayout>
+
+</RelativeLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bg_titlebar"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/punchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip">
+
+                        <TextView
+                            android:id="@+id/staff_name_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dip"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_currency"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/staff_no_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/staff_name_txt"
+                            android:layout_below="@id/staff_name_txt"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_explain"
+                            android:textSize="14sp" />
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/staff_img"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/staff_no_txt"
+                            android:scaleType="fitXY" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/below_divider"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        style="@style/ApplyDetails"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/card_number" />
+
+                        <TextView
+                            android:id="@+id/card_number_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/ApplyDetails"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/signed_detail_time" />
+
+                        <TextView
+                            android:id="@+id/data_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/ApplyDetails"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/terminal" />
+
+                        <TextView
+                            android:id="@+id/terminal_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/ApplyDetails"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/reason" />
+
+                        <TextView
+                            android:id="@+id/reason_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/ApplyDetails"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/note" />
+
+                        <TextView
+                            android:id="@+id/remark_txt"
+                            style="@style/explain_content"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/signedcard_approval_details_ll_pic_container"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        style="@style/ApplyDetails">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:layout_gravity="top"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/attachment" />
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/signedcard__approval_details_sdv_pic"
+                            style="@style/explain_content"
+                            android:layout_width="112dp"
+                            android:layout_height="88dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/divider"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <com.vgtech.common.view.NoScrollListview
+                    android:id="@+id/approval_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="0dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/status_img"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!--<View-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:background="@color/line_color" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/refuse_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_button"
+                android:clickable="true"
+                android:gravity="center">
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:gravity="center">-->
+                    <!--android:drawableLeft="@mipmap/approval_refused_img"-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/refuse"
+                        android:textColor="#1ec0e6"
+                        android:textSize="17sp" />
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="0.25dp"-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@color/line_color" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/agree_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_button"
+                android:clickable="true"
+                android:gravity="center">
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:gravity="center">-->
+                    <!--android:drawableLeft="@mipmap/approval_adopt_img"-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:text="@string/agree"
+                        android:textColor="#1ec0e6"
+                        android:textSize="17sp" />
+                <!--</LinearLayout>-->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--<View-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:background="@color/line_color" />-->
+    </LinearLayout>
+
+    <com.vgtech.common.view.VancloudLoadingLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/banckground_color"
+        android:visibility="gone" />
+</RelativeLayout>

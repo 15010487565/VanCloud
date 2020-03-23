@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/vantop_gray_backgroud">
+    <TextView
+        android:textSize="16sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="@string/vantop_now_salary"
+        android:textColor="@color/font"
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:textSize="16sp"
+        android:textColor="@color/comment_blue"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/salary_circlerect_bk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:paddingBottom="1dp"
+        android:paddingRight="1dp"
+        android:paddingLeft="1dp"
+        android:background="@drawable/salary_list_rect_bk"
+        android:scrollbars="none"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:listSelector="@null"
+        android:id="@+id/list_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/line_color"
+        android:dividerHeight="0.5dip"/>
+</LinearLayout>

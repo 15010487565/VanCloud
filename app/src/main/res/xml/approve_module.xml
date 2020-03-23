@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List>
+    <Appmenu
+        name="android.resource://com.vgtech.common/string/overtime"
+        color="android.resource://com.vgtech.common/color/white"
+        icon="android.resource://com.vgtech.common/mipmap/approval_overtime"
+        tag="shenqing_extra_work" />
+    <Appmenu
+        name="android.resource://com.vgtech.common/string/leave"
+        color="android.resource://com.vgtech.common/color/white"
+        icon="android.resource://com.vgtech.common/mipmap/approval_leave"
+        tag="shenqing_vantop_holiday" />
+    <Appmenu
+        name="android.resource://com.vgtech.common/string/change_sign"
+        color="android.resource://com.vgtech.common/color/white"
+        icon="android.resource://com.vgtech.common/mipmap/approval_change_sign"
+        tag="shenqing_sign_card" />
+    <Appmenu
+        name="android.resource://com.vgtech.common/string/overtime"
+        color="android.resource://com.vgtech.common/color/white"
+        icon="android.resource://com.vgtech.common/mipmap/approval_overtime"
+        tag="extra_work" />
+    <Appmenu
+        name="android.resource://com.vgtech.common/string/leave"
+        color="android.resource://com.vgtech.common/color/white"
+        icon="android.resource://com.vgtech.common/mipmap/approval_leave"
+        tag="vantop_holiday" />
+    <Appmenu
+        name="android.resource://com.vgtech.common/string/change_sign"
+        color="android.resource://com.vgtech.common/color/white"
+        icon="android.resource://com.vgtech.common/mipmap/approval_change_sign"
+        tag="sign_card" />
+
+    <Appmenu
+        name="android.resource://com.vgtech.common/string/ordinary_approval"
+        color="android.resource://com.vgtech.common/color/white"
+        icon="android.resource://com.vgtech.common/mipmap/approval_ordinary_approval"
+        tag="vancloud_flow" />
+    <Appmenu
+        name="android.resource://com.vgtech.common/string/leave"
+        color="android.resource://com.vgtech.common/color/white"
+        icon="android.resource://com.vgtech.common/mipmap/approval_leave"
+        tag="vancloud_holiday" />
+    <Appmenu
+        name="android.resource://com.vgtech.common/string/approval_recruit_plan"
+        color="android.resource://com.vgtech.common/color/white"
+        icon="android.resource://com.vgtech.common/mipmap/approval_recruit_plan"
+        tag="vancloud_zhaopin" />
+
+</List>

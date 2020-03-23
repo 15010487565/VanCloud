@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp">
+
+    <FrameLayout
+        android:id="@+id/avatar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dip">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/avatar"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter" />
+
+        <com.vgtech.vancloud.ui.view.groupimageview.NineGridImageView
+            android:id="@+id/avatar_container"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:background="#eeeeee"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@id/messages_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/avatar_layout"
+        android:singleLine="true"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/numLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/messages_item_name"
+        android:singleLine="true" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_select"
+    android:paddingBottom="6dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="6dp">
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/black"
+        tools:ignore="RtlHardcoded"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/typeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeView"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="5dp"
+        android:paddingTop="3dp"
+        android:textSize="13sp"
+        tools:ignore="RtlHardcoded"
+        android:textColor="@color/comment_grey"/>
+
+    <TextView
+        android:id="@+id/statusView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/timeView"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/arrowView"
+        android:paddingTop="2dp"
+        android:textSize="13sp"
+        tools:ignore="RtlHardcoded"/>
+
+    <ImageView
+        android:id="@+id/arrowView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/wg_gz_right_icon"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+</RelativeLayout>

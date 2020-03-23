@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sign_status">
+        <item>全部考勤</item>
+        <item>异常考勤</item>
+    </string-array>
+</resources>

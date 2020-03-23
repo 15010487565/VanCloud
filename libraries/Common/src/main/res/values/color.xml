@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_title">@color/comment_blue</color>
+
+    <color name="colorPrimary">@color/comment_blue</color>
+    <color name="colorPrimaryDark">@color/comment_blue</color>
+    <color name="white">#ffffff</color>
+    <color name="ripple">@color/ripple_material_light</color>
+    <color name="black">#000000</color>
+    <color name="banckground_color">#F2F2F2</color>
+    <color name="grey_text_color">#888888</color>
+    <color name="bg_edit">#e2e2e2</color>
+    <color name="out_line">#cccccc</color>
+    <color name="text_black">#161616</color>
+    <color name="spit_line">#d2d2d2</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="line_color">#E8E8E8</color>
+    <color name="comment_blue">#3AB5FF</color>
+    <color name="comment_grey">#929292</color>
+    <color name="comment_receiver">#5577a7</color>
+    <color name="red">#ff0000</color>
+    <color name="calendar_today">#FD8934</color>
+    <color name="calendar_background">#ffffff</color>
+    <color name="text_color">#03a9f4</color>
+    <color name="search_text_color">#A7A7A7</color>
+    <color name="serch_blue">@color/comment_blue</color>
+    <color name="white_pressed_color">#e8ecef</color>
+    <color name="below_button">#f7f7f7</color>
+    <color name="below_text_op">#4bc0f6</color>
+    <color name="below_text_ed">#959595</color>
+    <color name="dark_gray">#6c6c6c</color>
+    <color name="press_color">#EBEBEB</color>
+    <color name="diaphaneity_white">#CCFFFFFF</color>
+    <!--50%透明黑-->
+    <color name="diaphaneity_black">#80000000</color>
+    <color name="banckground_color_pressed">#e7e7e7</color>
+
+    <color name="lable_enable">#808080</color>
+    <color name="lable_unenable">#99808080</color>
+
+    <color name="todo_bg">#FF90A0</color>
+    <color name="message_bg">#0AD0CA</color>
+    <color name="sys_message_bg">#00B7FF</color>
+
+    <color name="diaphaneity_blue">#CC3ab5ff</color>
+    <color name="approval_grey">#999590</color>
+    <color name="diaphaneity_grey">#4D636363</color>
+    <color name="txt_explain">#999999</color>
+    <color name="item_button_text">#FF636363</color>
+
+    <color name="bg_title_signin">#F1F3F7</color>
+    <color name="btn_logn_end">#FF529bd0</color>
+    <color name="btn_login_start">@color/comment_blue</color>
+    <color name="btn_login_signin">#7ea0ff</color>
+    <color name="black_22">#222222</color>
+    <color name="order_grey">@color/black_99</color>
+    <color name="black_99">#999999</color>
+    <color name="agree">#72c72c</color>
+    <color name="refuse">#ff5555</color>
+    <color name="black_ec">#ececec</color>
+<!--    <color name="app_shares">#bfbb1c</color>-->
+    <color name="schedule">#89a8de</color>
+    <color name="message">#fa92b5</color>
+    <color name="black_ed">#ededed</color>
+</resources>

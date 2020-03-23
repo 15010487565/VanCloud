@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/notice_layput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/me_item_single">
+
+        <ImageView
+            android:id="@+id/notice_logo"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_notification"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_app_notice" />
+
+
+        <TextView
+            android:id="@+id/notice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/notice_logo"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="@string/lable_notice"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/notify_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notice_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="6dip"
+            android:layout_toLeftOf="@+id/notify_num"
+            android:layout_toRightOf="@+id/notice_logo"
+            android:singleLine="true"
+            android:text="@string/todo_default"
+            android:textColor="@color/comment_grey"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/notify_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/notice_title"
+            android:layout_marginRight="5dip"
+            android:singleLine="true"
+            android:textColor="@color/comment_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/notify_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/notify_time"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/tip_msg_count"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/notice_logo"
+            android:layout_marginLeft="10dp"
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notification_layput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/me_item_single">
+
+        <ImageView
+            android:id="@+id/notification_logo"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_notify"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_app_notification" />
+
+
+        <TextView
+            android:id="@+id/notification_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/notification_logo"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="@string/lable_notification"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/notification_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="6dip"
+            android:layout_toLeftOf="@+id/notification_num"
+            android:layout_toRightOf="@+id/notification_logo"
+            android:singleLine="true"
+            android:text="@string/todo_default"
+            android:textColor="@color/comment_grey"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/notification_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/notification_title"
+            android:layout_marginRight="5dip"
+            android:singleLine="true"
+            android:textColor="@color/comment_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/notification_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/notification_time"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/tip_msg_count"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/notification_logo"
+            android:layout_marginLeft="10dp"
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/todo_layput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/me_item_single">
+
+        <ImageView
+            android:id="@+id/todo_logo"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_todo_only"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_app_todo" />
+
+
+        <TextView
+            android:id="@+id/todo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/todo_logo"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="@string/information_todo"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/todo_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/todo_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="6dip"
+            android:layout_toLeftOf="@+id/todo_num"
+            android:layout_toRightOf="@+id/todo_logo"
+            android:singleLine="true"
+            android:text="@string/todo_default"
+            android:textColor="@color/comment_grey"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/todo_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/todo_title"
+            android:layout_marginRight="5dip"
+            android:singleLine="true"
+            android:textColor="@color/comment_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/todo_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/todo_time"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/tip_msg_count"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/todo_logo"
+            android:layout_marginLeft="10dp"
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_alert_layput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/me_item_single">
+
+        <ImageView
+            android:id="@+id/message_alert_logo"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_message"
+            android:contentDescription="@null"
+            android:src="@mipmap/message_logo" />
+
+
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/message_alert_logo"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="@string/message_alert"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/message_alert_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="6dip"
+            android:layout_toRightOf="@+id/message_alert_logo"
+            android:singleLine="true"
+            android:text="@string/todo_default"
+            android:textColor="@color/comment_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/message_alert_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/message_title"
+            android:layout_marginRight="5dip"
+            android:singleLine="true"
+            android:textColor="@color/comment_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/message_alert_num"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/message_alert_time"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/tip_msg_count"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/message_comment_new"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/message_alert_time"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/tip_msg_count"
+            android:visibility="gone" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/message_alert_logo"
+            android:layout_marginLeft="10dp"
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_luntan_layput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/me_item_single">
+
+        <ImageView
+            android:id="@+id/message_luntan_logo"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_message_luntan"
+            android:contentDescription="@null"
+            android:src="@mipmap/message_luntan" />
+
+
+        <TextView
+            android:id="@+id/message_luntan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/message_luntan_logo"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="@string/message_luntan"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/message_luntan_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_luntan_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="6dip"
+            android:layout_toRightOf="@+id/message_luntan_logo"
+            android:singleLine="true"
+            android:text="@string/todo_default"
+            android:textColor="@color/comment_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/message_luntan_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/message_luntan_title"
+            android:layout_marginRight="5dip"
+            android:singleLine="true"
+            android:textColor="@color/comment_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/message_luntan_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/message_luntan_time"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/tip_msg_count"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/message_luntan_new"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignBottom="@+id/img_logo"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/message_luntan_time"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/tip_msg_count"
+            android:visibility="gone" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/message_luntan_logo"
+            android:layout_marginLeft="10dp"
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+</LinearLayout>

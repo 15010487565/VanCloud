@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false">
+
+    <LinearLayout
+        android:id="@+id/line_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/top_line"
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/below_divider" />
+
+        <ImageView
+            android:id="@+id/iv_point"
+            android:layout_width="15dip"
+            android:layout_height="15dip" />
+
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="1dip"
+            android:layout_height="63dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/below_divider" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_whiter_bg"
+        android:layout_toRightOf="@id/line_ll">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/approval_staff_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/user_photo_default_small" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/approval_staff_img">
+
+            <TextView
+                android:id="@+id/approval_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                android:textColor="@color/txt_currency"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/status_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/approval_name_txt"
+                android:layout_below="@+id/approval_name_txt"
+                android:gravity="center_vertical|bottom"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/status_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/approval_name_txt"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/status_remark"
+                android:gravity="center_vertical|bottom"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/approval_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/txt_explain"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

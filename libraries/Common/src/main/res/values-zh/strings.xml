@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">Common</string>
+    <string name="man">人</string>
+    <string name="no_network">无网络连接</string>
+    <string name="install_wx">请安装微信客户端</string>
+    <string name="toast_login_expired">登录失效，请重新登录</string>
+    <string name="network_error">您的网络似乎不给力哦!</string>
+    <string name="datefulldialog_info_endtime">结束时间不能小于开始时间</string>
+    <string name="datefulldialog_info_starttime">开始时间不能大于结束时间</string>
+    <string name="register_name_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="message_info">亲，您有%1$s条未读消息哦！</string>
+    <string name="loading">正在载入</string>
+    <string name="btn_finish">完成</string>
+    <string name="dataloading">加载中…</string>
+    <string name="loading_error">加载失败</string>
+    <string name="first_password">您是初次使用，请先设置密码</string>
+    <string name="insert_this_password">请输入支付密码，以验证身份</string>
+    <string name="insert_pay_password_please">请输入支付密码</string>
+    <string name="insert_new_password_please">请输入新密码</string>
+    <string name="insert_new_password_again">请再次输入新密码</string>
+    <string name="insert_new_password">请您设置新支付密码</string>
+    <string name="twice_password_is_not_same">两次密码不相同，请重新输入新密码</string>
+    <string name="cancel_dialog">重新输入</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="ok">确定</string>
+    <string name="can_pay_for_order">未知错误，无法支付订单</string>
+
+    <string name="user_name">当前帐号：%1$s</string>
+    <string name="init_new_password">设置新密码</string>
+    <string name="prompt_info_common">正在请求服务器...</string>
+
+
+    <string name="personal_btn_bangding">绑&#160;&#160;定</string>
+    <string name="personal_btn_un_bangding">解除绑定</string>
+    <string name="resume_manager">简历管理</string>
+    <string name="personal_resume_prive">简历预览</string>
+    <string name="personal_buy">购买</string>
+    <string name="personal_del">删除</string>
+    <string name="personal_resume_del">是否删除该简历？</string>
+    <string name="personal_cancle">取消</string>
+    <string name="personal_tv_beijin">北京</string>
+    <string name="personal_now_place">当前位置</string>
+    <string name="personal_choose_place">选择地区</string>
+    <string name="personal_add_language_degree">选择掌握程度</string>
+    <string name="personal_select_lab">已选行业</string>
+    <string name="personal_tv_open">展开</string>
+
+    <string name="personal_login_success_msg">登陆成功</string>
+    <string name="personal_submit">提交</string>
+    <string name="personal_jobdict_zhineng">所有职能</string>
+    <string name="personal_jobdict_zhineng_select">已选职能</string>
+    <string name="personal_jobdict_hangye">选择行业</string>
+    <string name="personal_jobdict_hangye_select">已选行业</string>
+    <string name="personal_jobdict_choose_zhineng">选择职能</string>
+    <string name="personal_jobdict_choose_city">已选地点</string>
+    <string name="personal_jobdict_city">选择地点</string>
+    <string name="personal_jobdict_all_hangye">所有行业</string>
+    <string name="personal_jobdict_shou">收起</string>
+    <string name="personal_jobdict_zhan">展开</string>
+    <string name="personal_jobdict_msg">只有此项时不可删除</string>
+    <string name="personal_jobdict_max_msg">最多只能选择</string>
+    <string name="personal_jobdict_ge">个</string>
+
+    <string name="personal_choose_work_years">选择工作年限</string>
+    <string name="personal_choose_company_type">选择公司性质</string>
+    <string name="personal_choose_company_size">选择公司规模</string>
+    <string name="personal_choose_chuangye">选择创业经历</string>
+    <string name="personal_choose_pay">选择薪资范围</string>
+    <string name="personal_choose_zhiwei_num">选择职位数</string>
+    <string name="personal_choose_fabu">发布日期</string>
+    <string name="personal_choose_city">选择地区</string>
+    <string name="personal_choose_zhiye">选择职业</string>
+    <string name="personal_choose_zhuanye">选择专业</string>
+    <string name="personal_choose_xueli">选择学历</string>
+    <string name="personal_choose_hunyin">婚姻状况</string>
+    <string name="personal_choose_hangye">选择行业</string>
+    <string name="personal_choose_age">选择年龄</string>
+
+    <string name="personal_mobile_msg">手机短信</string>
+    <string name="personal_weixin">微信</string>
+    <string name="personal_friend_cicle">朋友圈</string>
+    <string name="personal_weibo">微博</string>
+
+    <string name="personal_save">保存</string>
+    <string name="personal_please_msg">请输入一些内容以后再保存</string>
+    <string name="personal_max_msg">文字长度超出限制</string>
+
+    <string name="personal_add_language_type">选择语言类别</string>
+
+    <string name="app_approval">审批</string>
+    <string name="common_my_approval">我审批的</string>
+    <string name="my_launch">我发起的</string>
+    <string name="cc_me">抄送我的</string>
+    <string name="overtime">加班</string>
+    <string name="leave">休假</string>
+    <string name="change_sign">签卡</string>
+    <string name="change_sign_apply">签卡申请</string>
+    <string name="ordinary_approval">普通审批</string>
+    <string name="approval_recruit_plan">招聘计划</string>
+
+    <string name="end_time">结束时间</string>
+    <string name="start_time">开始时间</string>
+    <string name="search">搜索</string>
+    <string name="search_user">联系人</string>
+    <string name="lable_notice">公告</string>
+    <string name="lable_notification">通知</string>
+    <string name="todo">待办</string>
+    <string name="search_chatgroup">群聊</string>
+    <string name="search_chatmessage">聊天记录</string>
+    <string name="search_pushmessage">消息</string>
+    <string name="search_message_acount">共%1$d条与%2$s相关的聊天记录</string>
+
+    <string name="message_comment">评论</string>
+
+    <string name="waiting_approval_num">待审批(%1$s)</string>
+    <string name="already_approval_num">已审批(%1$s)</string>
+    <string name="waiting_approval">待审批</string>
+    <string name="already_approval">已审批</string>
+    <string name="title_signcard">打卡</string>
+
+    <string name="date_year">年</string>
+    <string name="date_month">月</string>
+    <string name="date_day">日</string>
+    <string name="date_hour">时</string>
+    <string name="date_minute">分</string>
+    <string name="datefulldialog_starttime">开始时间不能小于结束时间24小时</string>
+    <string name="datefulldialog_endtime">结束时间不能大于开始时间24小时</string>
+
+    <string name="unbundling_prompt">解除绑定成功</string>
+    <string name="cc_count">%1$s人</string>
+
+    <string name="load_fail_prompt">页面加载错误，点击重试</string>
+
+    <string name="select_not_less_current">选择日期不能小于当前日期</string>
+    <string name="select_not_great_current">选择日期不能大于当前日期30天</string>
+
+    <string name="scan_qr_code">扫描二维码</string>
+    <string name="pc_browser_opens">用电脑浏览器打开</string>
+    <string name="and_scan_qr_code">并扫描页面中的二维码即可</string>
+    <string name="scanning">正在扫描...</string>
+    <string name="scan_fail">扫描失败...</string>
+    <string name="please_login_qr_code">请将登录二维码</string>
+    <string name="frame_below">对齐下方取景框</string>
+    <string name="install_wb">请安装微博客户端</string>
+    <string name="application_name">万客</string>
+
+    <string name="vantop_cancel_prompt">该申请已撤销！</string>
+    <string name="btn_save_contact">保存号码</string>
+    <string name="xmpp_group_user_max">不能多于%1$d人</string>
+    <string name="name_tag" >名字</string>
+    <string name="title_tip">提示</string>
+    <string name="choose_start_time">请选择开始时间</string>
+    <string name="end_time1">到期日期</string>
+    <string name="vancloud_photo_album">相册</string>
+    <string name="vancloud_photo_album_prompt">最多选择9张图片</string>
+    <string name="vancloud_nofile_prompt">文件不存在</string>
+    <string name="lable_schedule_signcard_address">打卡地点</string>
+    <string name="toast_clock_in_location">请选择打卡地点</string>
+    <string name="lable_selected">已选择</string>
+    <string name="camera_permissions">请在应用管理中打开“相机”访问权限！</string>
+    <string name="vantop_isemulator">设备异常!</string>
+    <string name="permissions_equipment">权限异常!</string>
+    <string name="batch_hint">请至少选择一条记录</string>
+    <string name="device_permissions">权限申请失败</string>
+</resources>

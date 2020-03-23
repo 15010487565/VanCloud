@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名"
+                    android:textColor="@color/black_85_percent"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入姓名"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号"
+                    android:textColor="@color/black_85_percent"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tv_cardId"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入身份证号"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/resume_star_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;机"
+                    android:textColor="@color/black_85_percent"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入手机号码"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/resume_star_icon"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&#160;Q&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Q"
+                    android:textColor="@color/black_85_percent"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tv_qq"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入QQ号码"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/resume_star_icon"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人邮箱"
+                    android:textColor="@color/black_85_percent"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tv_email"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入个人邮箱"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_single_item"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/resume_star_icon"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="银&#160;&#160;行&#160;&#160;卡"
+                    android:textColor="@color/black_85_percent"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tv_band_card"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="常用银行卡/信用卡"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/resume_star_icon"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="国外学历"
+                    android:textColor="@color/black_85_percent"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/tv_one"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/et_bg"
+                    android:gravity="center"
+                    android:hint="国家简称"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tv_two"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/et_bg"
+                    android:gravity="center"
+                    android:hint="年份"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tv_three"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/et_bg"
+                    android:gravity="center"
+                    android:hint="编号"
+                    android:textColor="@color/lable_enable"
+                    android:textColorHint="@color/lable_unenable"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_text"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

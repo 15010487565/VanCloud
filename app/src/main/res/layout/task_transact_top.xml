@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/banckground_color"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/list_item_top_layout" />
+
+            <include layout="@layout/list_item_middle_layout" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/line_color" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/task_executer"
+                    android:textColor="@color/comment_grey"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/transactor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/comment_name"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:id="@+id/btn_reciver_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/task_receiver"
+                    android:textColor="@color/comment_grey"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/reciver_names"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/comment_grey"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/processer_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/banckground_color" />
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn_bgitem">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/processer_photo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/user_photo_default_small"
+                        fresco:roundAsCircle="true"
+                        fresco:roundedCornerRadius="180dp" />
+
+                    <TextView
+                        android:id="@+id/processer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/processer_photo"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/processer_mestamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/processer_photo"
+                        android:paddingBottom="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/comment_grey"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/processer_content_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_bgitem"
+                    android:paddingBottom="@dimen/split"
+                    android:paddingLeft="60dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp" />
+
+
+                <com.vgtech.common.view.NoScrollGridview
+                    android:id="@+id/processer_imagegridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/split"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_bgitem"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:verticalSpacing="5dp"
+                    android:visibility="gone" />
+
+                <com.vgtech.common.view.NoScrollListview
+                    android:id="@+id/processer_voice_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/split"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_bgitem"
+                    android:divider="@null"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/finish_logo"
+            android:layout_width="64dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="22dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/banckground_color" />
+</LinearLayout>

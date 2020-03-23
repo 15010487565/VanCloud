@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:background="@color/white"
+            android:divider="@color/line_color"
+            android:listSelector="@drawable/me_item_single"
+            android:dividerHeight="0.5dip"/>
+        <TextView
+            android:id="@+id/tv_center"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_index_bg"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:visibility="gone" />
+        <com.vgtech.vancloud.ui.register.utils.MyLetterListView
+            android:id="@+id/indexBar"
+            android:layout_width="20dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="5dp"
+            android:background="#40000000" />
+
+        <com.vgtech.common.view.VancloudLoadingLayout
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="75dp"
+            android:visibility="visible" />
+    </FrameLayout>
+</LinearLayout>

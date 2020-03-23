@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bgitem"
+        android:orientation="vertical">
+        <include layout="@layout/list_item_top_layout" />
+        <include layout="@layout/list_item_middle_layout" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color" />
+
+        <include layout="@layout/list_item_bottom_layout" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/finish_logo"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:visibility="gone" />
+</RelativeLayout>

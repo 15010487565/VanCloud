@@ -1,0 +1,273 @@
+<resources>
+    <string name="app_name">Vantop</string>
+    <string name="vantop_search">Search</string>
+    <string name="vantop_all">All</string>
+    <string name="vantop_please_select">Please Select</string>
+    <string name="vantop_approval">Approval Status</string>
+    <string name="vantop_option">OT Type</string>
+    <string name="vantop_select_time">Select time</string>
+    <string name="vantop_nothing">No</string>
+    <string name="vantop_start_time">Start Time</string>
+    <string name="vantop_end_time">End Time</string>
+    <string name="vantop_clear">Clear</string>
+    <string name="vantop_confine">Confirm</string>
+    <string name="vantop_cancle">Cancel</string>
+    <string name="vantop_time">Time:</string>
+    <string name="vantop_time_length">Length:</string>
+    <string name="vantop_hour">Hours</string>
+    <string name="vantop_approving">Approving</string>
+    <string name="vantop_adopt">Approved</string>
+    <string name="vantop_refuse">Reject</string>
+    <string name="vantop_overtime">OT</string>
+    <string name="vantop_overtime_name">OT Name</string>
+    <string name="vantop_overtime_type">OT Type</string>
+    <string name="vantop_shift">Shift</string>
+    <string name="vantop_overtime_num">OT Hour(s)</string>
+    <string name="vantop_overtime_data">OT Time</string>
+    <string name="vantop_deduceat_num">Meals Deduction Hour(s)</string>
+    <string name="vantop_approval_supervisor">Approval Superior</string>
+    <string name="vantop_reason">OT Reason</string>
+    <string name="vantop_overtime_hint">Please input reason(maximum 500 characters)</string>
+    <string name="vantop_isoutot">To Outside</string>
+    <string name="vantop_convert_vacation">Shift To Vacation</string>
+    <string name="vantop_convert_hours">Shift Hour(s)</string>
+    <string name="vantop_convert_reason">Shift Explanation</string>
+    <string name="vantop_hint_overtime_reason">Please input shift leave explanation(maximum 200 characters)</string>
+    <string name="vantop_attach_file">Attachment</string>
+    <string name="vantop_overtime_apply">OT</string>
+    <string name="ot_appcation">oT Appcation</string>
+    <string name="vantop_sumbit">Submit</string>
+    <string name="vantop_minute">Mins</string>
+    <string name="vantop_take">Take Photos</string>
+    <string name="vantop_select_photo">Select From Album</string>
+    <string name="vantop_shift_select">Shift Selection</string>
+    <string name="vantop_convert_leavecode">Shift Leave Type</string>
+    <string name="vantop_overtime_detail">Overtime Details</string>
+    <string name="vantop_overtime_change">Change</string>
+    <string name="date">Date</string>
+    <string name="in_time">On Duty</string>
+    <string name="out_time_mid">Leave On Duty</string>
+    <string name="in_time_mid">Back On Duty</string>
+    <string name="out_time">Off Duty</string>
+    <!--<string name="clock_apply">Attendance Makeup</string>-->
+    <string name="card_number">Card No.</string>
+    <string name="time">Time</string>
+    <string name="signed_detail_time">Time</string>
+    <string name="please_select">Please Select</string>
+    <string name="terminal">Terminal</string>
+    <string name="reason">Reason</string>
+    <string name="attachment">Attachment</string>
+    <string name="note">Remarks</string>
+    <string name="hint_input_content3">Please Input Remarks(maximum 200 words)</string>
+    <string name="from">To</string>
+
+    <string name="leave">Leave</string>
+    <string name="my_vacation">My Vacation</string>
+    <string name="may_apply">Appliable</string>
+    <string name="vantop_end_to">End To</string>
+    <string name="vantop_balance">Current balance</string>
+
+    <string name="vantop_off_balance">Residual Leave</string>
+
+    <string name="vantop_deadline">Deadline</string>
+    <string name="vantop_prev_year_balances">Balance Last Year</string>
+    <string name="vantop_year_alloc">Allocation This Year </string>
+    <string name="vantop_alloc">Annual balance</string>
+    <string name="vantop_adjustments">Adjusted Figure</string>
+    <string name="vantop_year_used">Used This Year </string>
+    <string name="vantop_apply_approved">Approved Application</string>
+    <string name="vantop_denied_apply">Rejected Application</string>
+    <string name="vantop_remark">Reason</string>
+    <string name="vantop_filing_date">Application Date</string>
+    <string name="vantop_duration">Duration</string>
+    <string name="vantop_all_day">Whole day</string>
+    <string name="vantop_select_approver">Select Approver</string>
+    <string name="vantop_please_select_approver">You have no approver temporarily. Please ask the HR in your company to add one for you</string>
+    <string name="vantop_cc">Cc</string>
+    <string name="vantop_leave_apply">Leave details</string>
+    <string name="vantop_approval_status">Approval Status</string>
+    <string name="vantop_change">Change</string>
+    <string name="vantop_undo">Undo</string>
+
+    <string name="vantop_punchcard_successed">Successfully clock in !</string>
+    <string name="vantop_times">Time(s)</string>
+    <string name="vantop_punchcardtimes">Clock-in </string>
+    <string name="vantop_punchcard_remarkhint">Share something with friends ! (Maximum 140 words)</string>
+    <string name="vantop_punchcard_punch">Clock in</string>
+    <string name="vantop_punchcard_operation">Clock In</string>
+    <string name="vantop_punchcard_record">Clock Record</string>
+    <string name="vantop_punchcard_record_info">Details of Clock-in</string>
+    <string name="vantop_punchcard_clockin">Attendance</string>
+    <string name="vantop_my_schedule">My schedule</string>
+    <string name="vantop_classvalue">Shift:</string>
+    <string name="up">上</string>
+    <string name="down">下</string>
+    <string name="vantop_puncardtim">Clock-in Time</string>
+    <string name="vantop_exception">Exception Explanation:</string>
+    <string name="vantop_status_label">Status:</string>
+    <string name="vantop_clockin_appeal">Appeal</string>
+    <string name="vantop_verifypsw">Password verification</string>
+    <string name="vantop_confirm">Confirm</string>
+    <string name="out">出</string>
+    <string name="back">回</string>
+    <string name="vantop_puncardtimes">Clock-in Record:</string>
+    <string name="vantop_time_">Time</string>
+    <string name="vantop_absence">Absent</string>
+    <string name="vantop_normal">Normal</string>
+    <string name="vantop_late">Late</string>
+    <string name="vantop_leave_early">Early Leave</string>
+    <string name="vantop_edit_success">Successfully Modify Info.!</string>
+    <string name="vantop_date">Date</string>
+    <string name="vantop_item">Project</string>
+    <string name="vantop_year">Annual</string>
+    <string name="vantop_salary_detail">Salary Details</string>
+    <string name="vantop_other">Other</string>
+    <string name="vantop_submit">Submit</string>
+    <string name="vantop_questionnaire_survey">Questionnaire</string>
+    <string name="vantop_salary_main">Salary</string>
+    <string name="vantop_please_input_pwd">Please input password</string>
+    <string name="vantop_pwd_error">Wrong Password</string>
+
+    <string name="vantop_please_start_time">Please select start time</string>
+    <string name="vantop_please_end_time">Please select end time</string>
+    <string name="vantop_overtime_approver_not">Approval superior cannot be empty</string>
+    <string name="vantop_convert_hours_error">Transfer length cannot be more than the value of deducting meal time from OT length</string>
+    <string name="vantop_sending">Sending...</string>
+    <string name="vantop_overtime_apply_success">OT application has been submitted</string>
+    <string name="vantop_submitdata">Submiting data !</string>
+    <string name="vantop_outofrang">Not involved in clock-in !</string>
+    <string name="vantop_submit_success">Successfully Submit !</string>
+    <string name="vantop_getdataerror">Fail to get data. Please check network !</string>
+    <string name="vantop_loadingnow">Loading...</string>
+    <string name="vantop_allsalaries">Total:</string>
+    <string name="vantop_appexception_hint">Maximum 260 Words</string>
+    <string name="vantop_clockinexception">Abnormal Attendance</string>
+    <string name="vantop_now_salary">Current Payroll</string>
+    <string name="time_not_null">Time cannot be empty</string>
+
+    <string name="vantop_no_list_data">Temporarily No Data</string>
+
+    <string name="signcard_detail">Abnormal Clock Detail</string>
+    <string name="delete">Delete</string>
+    <string name="take">Take Photos</string>
+    <string name="select_from_photo">Select From Album</string>
+    <string name="vantop_selec">Please Select</string>
+    <string name="vantop_fixed_inst">Fixed Description</string>
+
+    <string name="vantop_to">To</string>
+
+    <string name="vantop_agree">Agree</string>
+
+    <string name="vantop_select_null">Contents cannot be empty !</string>
+    <string name="vantop_userinfo">Personal Info.</string>
+    <string name="vantop_approval_date">Approval Date</string>
+    <string name="vantop_approval_notes">Approval Explanation</string>
+
+    <string name="vantop_approval_leval">%1$s Level Approval</string>
+
+    <string name="vantop_confirm_undo">Are you sure to undo?</string>
+    <string name="vantop_confirm_delete">Are you sure to delete?</string>
+    <string name="vantop_confirm_01">Confirm</string>
+    <string name="signcard_approval">Abnormal Clock Details</string>
+    <string name="agree">Agree</string>
+    <string name="refuse">Reject</string>
+    <string name="please_input_remark">Please input approval description(Not required)</string>
+    <string name="cancel">Cancel</string>
+    <string name="vantop_selectactivity">Please Select</string>
+    <string name="vantop_clockin_detail">Attendance Details</string>
+    <string name="vantop_nodata">No data</string>
+    <string name="vantop_number">Figure</string>
+
+    <string name="vantop_select">Select</string>
+    <string name="vantop_allsalari_label">Annual gross income is RMB:</string>
+
+
+    <string name="vantop_apply_disable">Application is unavailable</string>
+    <string name="picker_date">Select Date</string>
+    <string name="picker_time">Select time</string>
+
+    <string name="vantop_select_cc">Select The Person To cc</string>
+
+    <string name="vantop_please_input">Please Input</string>
+    <string name="vantop_startTime">Start time</string>
+    <string name="vantop_endTime">End time</string>
+    <string name="duration_min_tip">Duration cannot be less than</string>
+    <string name="vantop_picture">Picture</string>
+    <string name="vantop_yearsalary">Annual Salary</string>
+    <string name="vantop_time_length_new">Length</string>
+
+    <string name="vantop_input_remark">Please input application explanation</string>
+
+    <string name="vantop_approver">Approver</string>
+    <string name="vantop_ccer">Ccer</string>
+
+    <string name="vantop_vacation_type">Leave Type: %1$s</string>
+    <string name="vantop_old_vacation_type">Original Leave Type: %1$s</string>
+
+    <string name="confirm_agree_leave_apply">Are you sure to agree leave application?</string>
+    <string name="confirm_refuse_leave_apply">Are you sure to reject leave application?</string>
+    <string name="vantop_yes">Yes</string>
+    <string name="vantop_no">No</string>
+    <string name="vantop_wait">Wait</string>
+    <string name="vantop_approval_new">Approve</string>
+    <string name="vantop_overtime_approval">OT Approval</string>
+    <string name="vantop_text_error">Please input legal info.!</string>
+    <string name="vantop_havecommited">Submitted</string>
+    <string name="vantop_hasfailed">Expired</string>
+    <string name="vantop_nocommited">Unsubmit</string>
+    <string name="staff_detail">Staff Details</string>
+    <string name="vantop_finished">Complete</string>
+    <string name="vantop_yearsalarydefault">Salary in 2016</string>
+    <string name="vantop_pswverifyerror">Verifying password failed!</string>
+    <string name="vantop_nosalaries">No Salary Data</string>
+    <string name="vantop_nouserinfo">No info. of current user</string>
+    <string name="lable_message">Message</string>
+    <string name="lable_msg">Chat</string>
+    <string name="lable_phone">Call</string>
+    <string name="vantop_noautor">No permission to view. You cannot operate !</string>
+    <string name="cardno_not_null">Card No. cannot be empty</string>
+    <string name="vantop_lastpage">This is the Last page !</string>
+    <string name="vantop_header">Profile Photo</string>
+    <string name="vantop_month">Month</string>
+    <string name="month_one">Jan.</string>
+    <string name="month_two">Feb.</string>
+    <string name="month_three">Mar.</string>
+    <string name="month_four">Apr.</string>
+    <string name="month_five">May</string>
+    <string name="month_six">Jun.</string>
+    <string name="month_seven">Jul.</string>
+    <string name="month_eight">Aug.</string>
+    <string name="month_nine">Sep.</string>
+    <string name="month_ten">Oct.</string>
+    <string name="month_eleven">Nov.</string>
+    <string name="month_twelve">Dec.</string>
+    <string name="vantop_total">Subtotal</string>
+    <string name="vantop_overtime_change_ne">[ Change ]</string>
+    <string name="vantop_overtime_undo">[ Undo ]</string>
+
+    <string name="vantop_overtime_changed">[ Changed ]</string>
+    <string name="vantop_overtime_undone">[ Undone ]</string>
+
+    <string name="vantop_locationing">Position in...</string>
+    <string name="vantop_emailerror">Please enter a valid email address!</string>
+    <string name="vantop_phonerror">Please enter the correct number!</string>
+    <string name="vantop_digitserror">Please enter a number!</string>
+    <string name="vantop_forbid_virlocation">Close virtual location and try again</string>
+    <!--<string name="vantop_isemulator">Abnormal equipment!</string>-->
+    <string name="vantop_clickin_times">Times Today</string>
+    <string name="vantop_exception1">Exception Explanation</string>
+    <string name="vantop_location_refused">Vancloud has been forbidden to read location information.Please try to re license application rights management in mobile phone</string>
+    <string name="lable_sign_status">Status:</string>
+    <string name="btn_apply">Application</string>
+    <string name="tip_location_error">Location uncertainty?</string>
+    <string name="tip_retry_request">Click Retry</string>
+    <string name="notice_tobedone">Pending</string>
+    <string name="notice_readydone">Confirmed</string>
+    <string name="notice_title">Notice</string>
+    <string name="schedule_outlook_signcard">Schedule Outwork Clock-in</string>
+    <string name="leave_outlook_signcard">Leave Or Outwork Clock-in</string>
+    <string name="toast_close_root">To prevent cheating, please close the root permission!</string>
+    <string name="vg_slide_left_right">Slide left/right to see more</string>
+    <string name="toast_convert_leave">Please choose to take leave！</string>
+
+</resources>

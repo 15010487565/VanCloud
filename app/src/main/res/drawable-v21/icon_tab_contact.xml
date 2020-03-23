@@ -1,0 +1,17 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/ripple">
+    <item>
+        <selector>
+            <item
+                android:drawable="@mipmap/icon_tab_contact_selected"
+                android:state_pressed="true" />
+            <item
+                android:drawable="@mipmap/icon_tab_contact_selected"
+                android:state_selected="true" />
+            <item
+                android:drawable="@mipmap/icon_tab_contact_normal"
+                android:state_selected="false" />
+
+        </selector>
+    </item>
+</ripple>

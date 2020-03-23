@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/out_line" />
+
+    <ImageView
+        android:id="@+id/notice_icon_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:src="@mipmap/notice_icon" />
+
+    <ImageView
+        android:id="@+id/notice_push_bar_colse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:src="@mipmap/close_the_notice_push_bar" />
+
+    <TextView
+        android:id="@+id/notice_text"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/notice_push_bar_colse"
+        android:layout_toRightOf="@id/notice_icon_space"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:gravity="center|left"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textSize="13sp" />
+
+
+    <View
+        android:id="@+id/notice_shade"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/diaphaneity_black"
+        android:visibility="gone" />
+
+
+</merge>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/item_select"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_marginLeft="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/vantop_header"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/default_user_photo_big"
+            android:id="@+id/iv_header"
+            android:layout_centerVertical="true"
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/iv_header"
+        android:id="@+id/iv_edithead"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/icon_arrow_right" />
+</LinearLayout>

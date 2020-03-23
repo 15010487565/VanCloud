@@ -1,0 +1,13 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/ripple">
+    <item>
+        <selector>
+
+            <item
+                android:drawable="@drawable/alert_btn_left_pressed"
+                android:state_pressed="true" />
+            <item android:drawable="@drawable/trans_bg" />
+
+        </selector>
+    </item>
+</ripple>

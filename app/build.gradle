@@ -1,0 +1,151 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugly'
+bugly {
+    appId = "e75fa2d1e9"
+    appKey = "53caa732-3e90-4f6f-9a18-2029950c9d9d"
+    debug = true
+    execute = true
+    upload = true
+}
+
+android {
+    compileSdkVersion 28
+
+    useLibrary 'org.apache.http.legacy'
+    dexOptions {
+        javaMaxHeapSize "2048M"
+    }
+    defaultConfig {
+        applicationId "com.vgtech.vancloud"
+        minSdkVersion 15
+        targetSdkVersion 28
+
+        versionCode 374
+        versionName "3.7.41"
+        multiDexEnabled true
+        manifestPlaceholders = [
+                GETUI_APP_ID       : "cuIrqZ8qF3AhK6U1gUltM6",
+                GETUI_APP_KEY      : "Y07oh5KIfV6JG4DTGy4qP5",
+                GETUI_APP_SECRET   : "xMSNO2VfHX9se4SCZLlnL",
+                UMENG_CHANNEL_VALUE: "channel_name"
+        ]
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a"
+        }
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true    //加上这行即可
+            }
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    signingConfigs {
+        myConfig {
+            storeFile file("vg.keystore")
+            storePassword "vgtech"
+            keyAlias "vgtech"
+            keyPassword "vgtech"
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.myConfig
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.myConfig
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            resources.srcDirs = ['src/main/resources', 'src/main/resources/']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/maven/com.belerweb/pinyin4j/pom.xml'
+        exclude 'META-INF/maven/com.belerweb/pinyin4j/pom.properties'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    flavorDimensions "versionCode"
+    productFlavors {
+        abcselfdev {}
+        vgtech {}
+        mobile360 {}
+        baidu {}
+        xiaomi {}
+        huawei {}
+        wandoujia {}
+        oppo {}
+        sogou {}
+        jifeng {}
+        eoemarket {}
+        meizu {}
+        yingyonghui {}
+        pp {}
+        jinli {}
+        vivo {}
+        yiyonghui {}
+        anzhimarket {}
+        mumayimarket {}
+        tengxun {}
+    }
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+    android.applicationVariants.all {
+        variant -> variant.outputs.each {
+            def fileName = "${variant.baseName}-${variant.versionName}-${releaseTime()}.apk"
+            it.outputFileName = fileName
+        }
+    }
+}
+//获取编译时间
+static def releaseTime() {
+    return new Date().format("MMddHHmm")
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    /* implementation project(':libraries:AndroidProgressHUD')*/
+    implementation project(':libraries:Android-PullToRefresh')
+    implementation project(':libraries:FileSelector')
+    implementation project(':libraries:Common')
+    implementation project(':vantop')
+    implementation files('libs/alipaySdk-20160223.jar')
+    implementation files('libs/asmack-android-8-4.0.6_vancloud.jar')
+    implementation project(':behaviorstatisticslibrary')
+    implementation 'com.umeng.analytics:analytics:latest.integration'
+    implementation 'com.google.code.gson:gson:2.3.1'
+    implementation 'com.jakewharton:butterknife:6.1.0'
+    implementation 'com.belerweb:pinyin4j:2.5.0'
+    implementation 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
+    implementation 'org.roboguice:roboguice:2.0'
+    implementation 'dnsjava:dnsjava:2.1.6'
+
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation files('libs/tbs_sdk_thirdapp_v3.6.0.1310_43612_sharewithdownload_withoutGame_obfs_20180706_163319.jar')
+    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+
+}

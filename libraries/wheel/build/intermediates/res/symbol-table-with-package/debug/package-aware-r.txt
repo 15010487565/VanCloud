@@ -1,0 +1,3 @@
+kankan.wheel
+drawable wheel_bg
+drawable wheel_val

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/open_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#57b1ee">
+
+        <ImageView
+            android:id="@+id/ic_expend_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_horizontal"
+            android:src="@mipmap/ic_expend_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/ic_expend_state"
+            android:text="@string/launch_sub_schedule"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <com.vgtech.common.view.NoScrollListview
+        android:id="@+id/sublist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e599d9ff"
+        android:divider="@null"
+        android:dividerHeight="0dip"
+        android:scrollbars="none"
+        android:visibility="visible" />
+
+</LinearLayout>

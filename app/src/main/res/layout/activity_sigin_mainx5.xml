@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color"
+    android:orientation="vertical">
+    <!--<include layout="@layout/title_bar_signin" />-->
+    <LinearLayout
+        android:id="@+id/bg_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/bg_title"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_actionbar"
+                android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha" />
+
+            <ImageButton
+                android:id="@+id/iv_close"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_actionbar"
+                android:src="@mipmap/abc_ic_clear_mtrl_alpha" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<android.support.v4.widget.SwipeRefreshLayout-->
+            <!--android:id="@+id/my_swiperefreshlayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <com.tencent.smtt.sdk.WebView
+                android:id="@+id/wv_task"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+        <com.vgtech.common.view.VancloudLoadingLayout
+            android:id="@+id/ll_loadingview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

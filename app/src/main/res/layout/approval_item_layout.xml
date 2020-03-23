@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_color"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bt_Select"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:background="@drawable/selector_batch_un" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_logo"
+                android:layout_width="42dip"
+                android:layout_height="42dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/bt_Select"
+                android:src="@mipmap/user_photo_default_small" />
+
+
+            <RelativeLayout
+                android:id="@+id/layout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img_logo">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp">
+
+                        <TextView
+                            android:id="@+id/title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text=""
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/text_black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/approval_leave_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/text_black"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/tv_changeHint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_title_tv"
+                            android:ellipsize="middle"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="@string/vantop_overtime_changed"
+                            android:textColor="@color/red"
+                            android:textSize="16sp" />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:id="@+id/time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/comment_grey"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp">
+
+                        <TextView
+                            android:id="@+id/approval_start_end_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/comment_grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/approval_time_length"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/approval_start_end_time"
+                            android:textColor="@color/comment_grey"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/state_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/comment_grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/process_state_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/state_tv"
+                            android:singleLine="true"
+                            android:textColor="@color/comment_grey"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/time_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true">
+
+                            <TextView
+                                android:id="@+id/can_reminders"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:gravity="center"
+                                android:text="@string/hasten"
+                                android:textColor="@color/bg_title"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/line_color"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/chane_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:background="@drawable/item_select"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_toRightOf="@+id/img001"
+                android:background="@color/line_color" />
+
+            <ImageView
+                android:id="@+id/img001"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img001"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/change_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_changeStateHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/change_title_tv"
+                    android:ellipsize="middle"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="@string/vantop_overtime_change_ne"
+                    android:textColor="@color/comment_grey"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/change_state_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/change_title_tv"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/comment_grey"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/change_state_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/change_title_tv"
+                    android:layout_toRightOf="@+id/change_state_view"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/comment_grey"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/change_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img001"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:singleLine="true"
+                android:textColor="@color/comment_grey"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

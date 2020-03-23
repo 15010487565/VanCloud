@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vgtech.vantop">
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application>
+        <activity
+            android:name=".ui.overtime.CreatedOverTimeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.overtime.OverTimeDetailActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.overtime.ShiftSelectActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.salary.SalaryMainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.signedcard.SignedCardAddActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.signedcard.SignedCardDetailsActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.punchcard.CardInfoByDayActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.signedcard.SignedCardApprovalDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.punchcard.PunchCardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.punchcard.AttendenceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.punchcard.CardInfoActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.punchcard.PunchMapActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.clockin.ClockInDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.questionnaire.QuestionnaireActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.questionnaire.QustionnaireDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.vacation.MyVacationActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.vacation.VacationBalanceActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.vacation.ApplyVacationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.vacation.VacationApplyListActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.vacation.BalanceUseActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.vacation.VacationApplyDetailsActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.approval.ApprovalStaffsActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+
+        <activity
+            android:name=".ui.userinfo.VantopUserInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" >
+
+        <intent-filter>
+            <action android:name="com.vgtech.vancloud.intent.action.VantopUserInfoActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+        <activity
+            android:name=".ui.ItemSelectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.clockin.ClockinExceptionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="adjustPan"></activity>
+    </application>
+
+</manifest>

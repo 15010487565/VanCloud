@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color">
+
+
+    <com.vgtech.vantop.ui.view.ViewPagerIndicator
+        android:id="@+id/indicator_vp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        app:highlight_color="@color/comment_blue"
+        app:indicator_color="@color/comment_blue"
+        app:indicator_height="3dp"
+        app:normal_color="@color/dark_gray"
+        app:visisble_tab_count="3"></com.vgtech.vantop.ui.view.ViewPagerIndicator>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/indicator_vp"
+        android:background="@color/line_color" />
+
+    <com.vgtech.common.view.NoScrollViewPager
+        android:id="@+id/vp_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/prent_widget_ffv" >
+
+    <LinearLayout
+        style="@style/prent_widget_fw"
+        android:background="@drawable/box" >
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            style="@style/prent_widget_fw"
+            android:layout_margin="10dp"
+            android:text="选择时间"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/prent_widget_fwv"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <LinearLayout
+            style="@style/prent_widget_fw"
+            android:layout_margin="10dp"
+            android:gravity="center" >
+
+            <com.ikair.baby.ui.view.wheel.WheelView
+                android:id="@+id/hour"
+                style="@style/prent_widget_fw"
+                android:layout_width="100dp"
+                android:layout_weight="1" />
+
+            <com.ikair.baby.ui.view.wheel.WheelView
+                android:id="@+id/minute"
+                style="@style/prent_widget_fw"
+                android:layout_width="100dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/prent_widget_fw" >
+
+            <Button
+                android:id="@+id/btn_sure"
+                style="@style/submit_button_style"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="确定" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/submit_button_style"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

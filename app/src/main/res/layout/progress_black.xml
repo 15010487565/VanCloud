@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dip">
+
+    <LinearLayout
+        android:id="@+id/progressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <com.vgtech.common.view.progressbar.ProgressWheel xmlns:wheel="http://schemas.android.com/apk/res-auto"
+            android:id="@android:id/progress"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            wheel:matProg_barColor="@color/bg_title"
+            wheel:matProg_progressIndeterminate="true" />
+        <TextView
+            android:id="@+id/progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dip"
+            android:paddingLeft="6dip"
+            android:paddingTop="2dip"
+            android:text="@string/data_loading"
+            android:textColor="@color/diaphaneity_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/error_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="80dip"
+            android:text="@string/btn_retry"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_network_error"
+            android:drawablePadding="5dip"
+            android:textSize="15sp"
+            android:text="@string/text_no_connection"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/grey_text_color" />
+    </LinearLayout>
+
+</FrameLayout>

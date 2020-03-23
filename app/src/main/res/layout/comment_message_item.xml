@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/user_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/user_photo_default_small" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/user_photo"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textColor="@color/bg_title"
+            android:textSize="@dimen/name_size" />
+
+        <TextView
+            android:id="@+id/content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/is_read"
+            android:layout_toRightOf="@+id/user_photo"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/name_size" />
+
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/comment_grey"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/is_read"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/user_name"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tip_msg_count"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content_text"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/user_photo"
+            android:background="@color/bg_color">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dip"
+                android:background="@drawable/message_round"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_app_approve" />
+
+            <TextView
+                android:id="@+id/item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/img_logo"
+                android:singleLine="true"
+                android:textColor="@color/comment_grey"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_color" />
+
+</LinearLayout>

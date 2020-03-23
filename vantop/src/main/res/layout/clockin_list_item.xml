@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="70dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dip"
+                android:singleLine="true"
+                android:text="@string/time"
+                android:textColor="@color/black_85_percent"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/exception_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dip"
+                android:singleLine="true"
+                android:text="@string/vantop_clockinexception"
+                android:textColor="@color/refused_txt"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/date_txt"
+                android:layout_below="@id/date_txt"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:textColor="@color/black_85_percent"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/type_txt"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/line_dash" />
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/time_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/date_txt"
+                android:layout_below="@id/type_txt"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/inTime_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/intime_img"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="09:00"
+                    android:textColor="#1ec0e6"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/outTime_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/intime_img"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text="18:00"
+                    android:textColor="#1ec0e6"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/timeMid_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/date_txt"
+                android:layout_below="@id/time_ll"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/outTimeMid_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="中断外出 : 13:30"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/inTimeMid_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text="中断返回 : 13:30"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/clock_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/wg_gz_right_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/banckground_color" />
+</LinearLayout>

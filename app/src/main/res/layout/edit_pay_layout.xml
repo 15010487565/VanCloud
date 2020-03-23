@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color"
+    android:gravity="center_horizontal">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/title"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="@color/order_grey"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/balance"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="#f1a327"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/order_info_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balance"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bottom_button"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/order_black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/order_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:textColor="@color/order_black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/need_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/bg_title"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+    <!--<include
+        layout="@layout/password_and_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_info"/>-->
+
+    <RelativeLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/order_info_header"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/load_err"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/loading_error"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/loading_layout" />
+    </LinearLayout>
+
+</RelativeLayout>

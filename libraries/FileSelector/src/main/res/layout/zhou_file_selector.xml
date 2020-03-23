@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#3ab5ff">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_actionbar"
+            android:padding="10dip"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@android:id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/file_selector"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/zhou_file_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zhou_title_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/zhou_file_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/zhou_title_height"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/title_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zhou_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/zhou_file_listView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:choiceMode="singleChoice" />
+
+        <LinearLayout
+            android:id="@+id/zhou_file_hit_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zhou_toast_bar_height"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/zhou_file_hit_bar_icon"
+                android:layout_width="@dimen/zhou_toast_bar_height"
+                android:layout_height="@dimen/zhou_toast_bar_height"
+                android:background="@drawable/unselect_btn" />
+
+            <TextView
+                android:id="@+id/zhou_file_hit_bar_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/zhou_file_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zhou_bottom_height"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/zhou_file_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="@string/zhou_cancel_btn" />
+
+        <Button
+            android:id="@+id/zhou_file_confirm_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="@string/zhou_confirm_btn" />
+    </LinearLayout>
+</LinearLayout>

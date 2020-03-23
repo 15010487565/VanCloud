@@ -1,0 +1,7 @@
+
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_checked="true" android:drawable="@mipmap/chk_on_normal" />
+    <item android:state_checked="false" android:drawable="@mipmap/chk_off_normal" />
+</selector>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:background="@drawable/clockin_time_bk"
+            android:gravity="center"
+            android:id="@+id/tv_mark"
+            android:layout_height="16sp"
+            android:layout_width="16sp"
+            android:text="@string/up"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <View
+            android:background="@color/out_line"
+            android:id="@+id/v_line"
+            android:layout_gravity="center"
+            android:layout_height="35dp"
+            android:layout_width="1dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/vantop_puncardtim"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_value"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/tv_label"
+            android:layout_width="match_parent"
+            android:text="无"
+            android:textColor="@color/font"
+            android:textSize="14sp" />
+
+        <TextView
+            android:visibility="invisible"
+            android:background="@drawable/clockin_loss_mark_bk"
+            android:gravity="center"
+            android:id="@+id/tv_describe"
+            android:layout_alignLeft="@id/tv_label"
+            android:layout_below="@id/tv_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:paddingLeft="6sp"
+            android:paddingRight="6sp"
+            android:text="缺卡"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

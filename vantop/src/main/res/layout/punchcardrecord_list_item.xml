@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/itemcard_byday"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/ic_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:src="@mipmap/ic_date" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ic_date"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toRightOf="@id/ic_date"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/black_85_percent"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/ic_date"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/line_dash"
+        android:layerType="software" />
+
+    <com.vgtech.common.view.NoScrollGridview
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_date"
+        android:layout_below="@id/divider"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4" />
+</RelativeLayout>

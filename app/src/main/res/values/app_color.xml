@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--公告-->
+    <color name="app_notice">#62c5ff</color>
+    <!--审批-->
+    <color name="app_approval_shenpi">#fe943e</color>
+    <!--申请-->
+    <color name="app_apply">@color/app_help</color>
+    <!--考勤打卡-->
+    <color name="app_clock_out">#69c6bb</color>
+    <!--日程-->
+    <color name="app_schedule">@color/app_help</color>
+    <!--任务-->
+    <color name="app_task">#f77ca5</color>
+    <!--工作汇报-->
+    <color name="app_report">#23BA9B</color>
+    <!--员工申请-->
+    <color name="app_staff_apply">#0BB7D8</color>
+    <!--分享-->
+    <color name="app_share">#8fbb1c</color>
+    <!--视频会议-->
+    <color name="app_meeting">@color/comment_blue</color>
+    <!--招聘-->
+    <color name="app_recruit">@color/comment_blue</color>
+    <!--背景调查-->
+    <color name="app_beidiao">@color/app_report</color>
+    <!--帮帮-->
+    <color name="app_help">#FFB135</color>
+    <!--流程-->
+    <color name="app_flow">@color/comment_blue</color>
+    <!--签到-->
+    <color name="app_checkin">#6accbf</color>
+    <!--订单管理-->
+    <color name="app_order">#6ACCBF</color>
+    <!--工资-->
+    <color name="app_salary">#f77ca5</color>
+    <!--问卷调查-->
+    <color name="app_vote">#c0a8d8</color>
+    <!--请假-->
+    <color name="app_leave">#a1ca92</color>
+<!--报表-->
+    <color name="report_forms">#63c4ff</color>
+
+    <color name="app_sign_card">#73cbef</color>
+
+    <color name="app_overtime">#89a8de</color>
+    <color name="meeting_appointment">#79bf55</color>
+    <color name="meeting_create">#baa0c7</color>
+    <!--内购-->
+    <color name="app_neigou">#f77ca5</color>
+    <!--心理体检-->
+    <color name="app_xinlitijian">#8fbb1c</color>
+    <!--绩效-->
+    <color name="app_jixiao">@color/comment_blue</color>
+    <!--领导查询-->
+    <color name="app_leaderquery">#8fbb1c</color>
+    <!--工作日志-->
+    <color name="app_worklog">#8fbb1c</color>
+<!--积分-->
+    <color name="app_integral">#f77ca5</color>
+    <color name="app_tax">#C0A8D8</color>
+<!--入职管理-->
+    <color name="app_entryapprove">#C0A8D8</color>
+
+    <!-- alert dialog -->
+    <color name="dialog_edit_bg">#E3E4E8</color>
+    <color name="dialog_text">#504A51</color>
+    <color name="dialog_confirm">#3F9CF2</color>
+    <color name="dialog_guide_img_bg">#eaf9fe</color>
+    <color name="dialog_guide_content_txt">#C1C8C9</color>
+    <color name="dialog_guide_button">#00b26d</color>
+    <color name="gray_d">#ffdddddd</color>
+    <color name="blue_normal">#ff00b26d</color>
+
+</resources>

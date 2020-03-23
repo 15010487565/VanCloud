@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false">
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="54.5dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/tv_schedule_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_schedule_date"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:text="2017-09-09"
+            android:textColor="@color/diaphaneity_white"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:text="10:30"
+                android:textColor="@color/diaphaneity_white"
+                android:textSize="13sp" />
+
+
+            <FrameLayout
+                android:id="@+id/iv_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24.5dip"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_circle_bg" />
+
+                <ImageView
+                    android:layout_width="6dip"
+                    android:layout_height="6dip"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_circle_white" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical">
+
+                <com.vgtech.vancloud.ui.view.MyRecyclerView
+                    android:id="@+id/id_recyclerview_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/iv_point"
+                    android:scrollbars="none" />
+
+
+                <RelativeLayout
+                    android:id="@+id/content_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/bg_white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/time_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_schedule_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/comment_grey"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_schedule_duration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/bg_title"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/time_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_below="@id/time_view"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/line_dash"
+                        android:layerType="software" />
+                    <TextView
+                        android:id="@+id/tv_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/time_line"
+                        android:layout_toLeftOf="@id/operation"
+                        android:text="tv_testtv_testtv_testtv_testtv_test"
+                        android:textColor="#222222"
+                        android:textSize="@dimen/content_size" />
+
+                    <!--<View
+                        android:id="@+id/devide"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_below="@id/tv_test"
+                        android:background="@color/out_line"/>-->
+
+                    <com.vgtech.common.view.NoScrollGridview
+                        android:id="@+id/imagegridview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_test"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="5dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="3"
+                        android:verticalSpacing="5dp"
+                        android:visibility="gone" />
+
+                    <com.vgtech.common.view.NoScrollListview
+                        android:id="@+id/voice_listview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imagegridview"
+                        android:divider="@null"
+                        android:scrollbars="none"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/bottom_time_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_below="@id/voice_listview"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/line_dash"
+                        android:layerType="software"
+                       />
+
+                    <ImageView
+                        android:id="@+id/operation"
+                        android:layout_width="9dp"
+                        android:layout_height="12dp"
+                        android:layout_alignTop="@+id/operation_tv"
+                        android:layout_below="@id/bottom_time_line"
+                        android:layout_toLeftOf="@+id/operation_tv"
+                        android:src="@mipmap/schedule_indeterminate_bg"
+                        />
+
+                    <TextView
+                        android:id="@+id/operation_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/bottom_time_line"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="5dp"
+                        android:text="未处理"
+                        android:textSize="10dp" />
+
+                    <ImageView
+                        android:id="@+id/cancel_view"
+                        android:layout_width="64dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="3dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

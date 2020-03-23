@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string name="file_selector">File Selector</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="zhou_cancel_btn">cancle</string>
+    <string name="zhou_confirm_btn">sure</string>
+
+
+
+
+
+
+
+
+
+
+
+    <string-array name="theme_selects">
+        <item>Defult</item>
+        <item>White</item>
+        <item>Black</item>
+        <item>Grey</item>
+    </string-array>
+
+    <string-array name="filter_selects">
+        <item>None</item>
+        <item>Image</item>
+        <item>Text</item>
+        <item>Video</item>
+        <item>Audio</item>
+    </string-array>
+
+    <string name="positive_mode">Positive</string>
+</resources>

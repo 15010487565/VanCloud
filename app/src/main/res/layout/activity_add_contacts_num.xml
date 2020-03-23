@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <include layout="@layout/item_choose_country" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <EditText
+            android:id="@+id/et_usertel"
+            style="@style/EditText_input"
+            android:hint="@string/register_you_num"
+            android:inputType="phone" />
+
+        <ImageView
+            style="@style/ImageView_input"
+            android:src="@mipmap/login_phone" />
+
+        <ImageView
+            android:id="@+id/del_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:padding="10dip"
+            android:src="@drawable/ic_edit_del"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eaeaea" />
+    </RelativeLayout>
+</LinearLayout>

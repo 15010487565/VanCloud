@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/list_item_top_layout" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/line_dash"
+        android:layerType="software" />
+    <TextView
+        android:id="@+id/help_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="60dp"
+        android:paddingRight="10dp"
+        android:paddingTop="@dimen/padding"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/content_size" />
+
+
+    <com.vgtech.common.view.NoScrollGridview
+        android:id="@+id/imagegridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:paddingBottom="5dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="10dp"
+        android:paddingTop="@dimen/padding"
+        android:verticalSpacing="5dp"
+        android:visibility="gone" />
+
+
+    <com.vgtech.common.view.NoScrollListview
+        android:id="@+id/voice_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imagegridview"
+        android:background="@color/white"
+        android:divider="@null"
+        android:paddingBottom="@dimen/split_list"
+        android:paddingLeft="60dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/locate_space"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="60dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/location_of_shared" />
+
+        <TextView
+            android:id="@+id/locate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4ab9fc" />
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/shared_list_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_color" />
+    <LinearLayout
+        android:id="@+id/btn_reciver_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_receiver"
+            android:textColor="@color/comment_grey"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/reciver_names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/comment_grey"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/banckground_color" />
+</LinearLayout>

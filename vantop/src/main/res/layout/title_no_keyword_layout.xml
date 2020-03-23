@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/advanced_search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/white"
+        android:visibility="invisible">
+
+        <include layout="@layout/search_layout" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50.5dp"
+        android:background="@color/comment_blue">
+
+        <TextView
+            android:id="@+id/tv_title_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:textColor="#FFFFFFFF"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:id="@+id/top_type_click"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="9dp"
+                android:layout_height="8dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/type_arrow_down"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/btn_actionbar"
+            android:src="@mipmap/btn_back" />
+
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_actionbar"
+            android:src="@drawable/btn_add"/>
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_actionbar"
+            android:gravity="center"
+            android:text="@string/vantop_cancle"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/add"
+            android:background="@drawable/btn_actionbar"
+            android:src="@mipmap/top_search" />
+
+
+        <View
+            android:id="@+id/title_shade"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/diaphaneity_black"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

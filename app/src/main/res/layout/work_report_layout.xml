@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:id="@+id/my_type"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.vgtech.common.view.TitleIndicator
+                android:id="@+id/my_type_title"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                app:footerColor="@color/comment_blue"
+                app:footerLineHeight="1dp"
+                app:footerTriangleHeight="2dp"
+                app:textColor="@color/tab_indicator_text"
+                app:textSizeNormal="12dp"
+                app:textSizeSelected="12dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/out_line" />
+
+            <!-- Don't set background for ViewPager. It doesn't work because of page margin -->
+
+            <com.vgtech.vancloud.ui.view.ViewPagerCompat
+                android:id="@+id/my_type_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/my_type_title"
+                android:duplicateParentState="true" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/subordinate_type"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone">
+
+            <com.vgtech.common.view.TitleIndicator
+                android:id="@+id/subordinate_type_title"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                app:footerColor="@color/comment_blue"
+                app:footerLineHeight="1dp"
+                app:footerTriangleHeight="2dp"
+                app:textColor="@color/tab_indicator_text"
+                app:textSizeNormal="12dp"
+                app:textSizeSelected="12dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/out_line" />
+
+            <!-- Don't set background for ViewPager. It doesn't work because of page margin -->
+
+            <com.vgtech.vancloud.ui.view.ViewPagerCompat
+                android:id="@+id/subordinate_type_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/subordinate_type_title"
+                android:duplicateParentState="true" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/shade_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/diaphaneity_black"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/type_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/my_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:drawableLeft="@mipmap/task_type_no_select"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/type_select"
+                android:gravity="center"
+                android:text="@string/my"
+                android:textColor="@drawable/type_text_select"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:id="@+id/subordinate_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:drawableLeft="@mipmap/task_type_no_select"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/type_select"
+                android:gravity="center"
+                android:text="@string/subordinate"
+                android:textColor="@drawable/type_text_select"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/title_layout" />
+
+</RelativeLayout>
+

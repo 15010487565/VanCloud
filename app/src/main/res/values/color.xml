@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="bg_title">@color/comment_blue</color>
+    <color name="comment_name">#5577a7</color>
+    <color name="bg_edit">#e2e2e2</color>
+    <color name="divider">#e5e3e3</color>
+    <color name="blue">#0000ff</color>
+    <color name="red">#ff0000</color>
+    <color name="alert">#f9851c</color>
+    <color name="draft_time">#323232</color>
+    <color name="black_85_percent">#d9000000</color>
+    <color name="below_button">#f7f7f7</color>
+    <color name="below_text_op">#4bc0f6</color>
+    <color name="below_text_ed">#959595</color>
+    <color name="line_color">#E8E8E8</color>
+    <color name="comment_grey">#999999</color>
+    <color name="comment_receiver">#5577a7</color>
+    <color name="line">#ffd3dde6</color>
+    <color name="griditems_bg">#ffe8ecef</color>
+    <!--全透明-->
+    <color name="transparent">#00000000</color>
+    <!--50%透明黑-->
+    <color name="diaphaneity_black">#80000000</color>
+    <color name="out_line">#cccccc</color>
+    <color name="text_black">@color/black_22</color>
+    <color name="item_button_text">#FF636363</color>
+    <color name="banckground_color_pressed">#e7e7e7</color>
+    <color name="white_pressed_color">#D7D8D9</color>
+    <color name="bg_input">#eaeded</color>
+    <color name="new_text">#666666</color>
+    <color name="light_gray">#eeeeee</color>
+    <color name="gray">#ebebeb</color>
+    <color name="dark_gray">#6c6c6c</color>
+    <color name="gold">#b89766</color>
+    <color name="message_border_color">#7f8389</color>
+    <color name="sideSelector_dialog_color">#67BA5F</color>
+    <color name="transparent_black">#30000000</color>
+    <color name="vacation_title">#adc8ee</color>
+    <color name="hint_text_color">#999999</color>
+    <color name="diaphaneity_white">#CCFFFFFF</color>
+    <color name="diaphaneity_white_01">#4DFFFFFF</color>
+    <color name="diaphaneity_grey">#4D636363</color>
+    <color name="press_color">#EBEBEB</color>
+    <color name="search_text_color">#A7A7A7</color>
+    <color name="serch_blue">@color/comment_blue</color>
+    <color name="spit_line">#d2d2d2</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+
+    <color name="calendar_background">#ffffff</color>
+    <color name="selection">#b1dce2ff</color>
+    <color name="calendar_zhe_day">#faedda</color>
+    <color name="event_center">#ff6bd697</color>
+    <color name="noMonth">#c0c0c0</color>
+    <color name="title_text_6">@color/btn_logn_end</color>
+    <color name="title_text_7">#FFbc4445</color>
+    <color name="text_6">#FFf3feff</color>
+    <color name="text_7">#FFfff1f2</color>
+    <color name="tempColor">#e3e3e3</color>
+    <color name="frame">#ffcc3266</color>
+    <color name="forecast_point">#fff66898</color>
+    <color name="br0">#ffffc5dd</color>
+    <color name="Text">#603b07</color>
+    <color name="ToDayText">#ffc2a53d</color>
+
+    <color name="green">#1ADC54</color>
+    <color name="praise_red">#FF3F3F</color>
+    <color name="diaphaneity_praise_red">#FFFD9595</color>
+
+
+    <color name="bg_color">#F4F3F3</color>
+    <color name="common_top_bar_blue">#22292c</color>
+    <color name="todo_text">#CBCBCB</color>
+
+    <color name="calendar_today">#FD8934</color>
+
+    <color name="schedule_agree_color">#4BE73B</color>
+    <color name="schedule_indeterminate_color">#3AB4FE</color>
+    <color name="schedule_overdue_color">#ABABAB</color>
+    <color name="schedule_refuse_color">#F95D5D</color>
+    <color name="schedule_undispose_color">#F4A001</color>
+
+    <color name="order_text">#FFC961</color>
+    <color name="order_money">#F5A100</color>
+    <color name="order_black">#444444</color>
+    <color name="order_line">#dddddd</color>
+    <color name="blue_round">#91d5ff</color>
+
+    <color name="popup_press">#2b2b2b</color>
+    <color name="popup_normal">#444444</color>
+
+    <color name="pay_failure_color">#E60002</color>
+    <color name="darkerorange">#ff7200</color>
+    <color name="background_menu_divider">#d0d0d0</color>
+    <!--<color name="transparent">#FFFFFF00</color>-->
+
+    <!--待办审批-->
+    <color name="todo_approval">#FF8B30</color>
+    <!--待办日程-->
+    <color name="todo_schedule">#FFBA00</color>
+    <!--待办任务-->
+    <color name="todo_task">#FF6189</color>
+    <!--待办工作汇报-->
+    <color name="todo_report">#00BD97</color>
+    <!--待办员工申请-->
+    <color name="todo_staff_apply">#0BB7D8</color>
+
+
+    <!--同意-->
+    <color name="process_agree">#66c142</color>
+    <!--不同意，拒绝、谢绝-->
+    <color name="process_disagree">#ff6666</color>
+    <!--待定、待审批-->
+    <color name="process_undetermined">#ec8a43</color>
+    <!--完成、已点评-->
+    <color name="process_finish">#999999</color>
+    <color name="notice_readed">#929292</color>
+    <color name="notice_unread">#161616</color>
+    <color name="black_fa">#fafafa</color>
+</resources>

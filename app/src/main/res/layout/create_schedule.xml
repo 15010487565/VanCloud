@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/new_schedule_header"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/start_time_click"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/item_select"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_time"
+            android:textColor="@color/comment_grey"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:gravity="right|center_vertical"
+            android:hint="@string/please_select"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/comment_grey"
+            android:textSize="17sp"
+
+            />
+    </LinearLayout>
+
+    <include layout="@layout/driver_line" />
+
+    <LinearLayout
+        android:id="@+id/end_time_click"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/item_select"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_time"
+            android:textColor="@color/comment_grey"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:gravity="right|center_vertical"
+            android:hint="@string/please_select"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/comment_grey"
+            android:textSize="17sp"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/banckground_color" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/item_select"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/lable_schedule_outlook"
+            android:textColor="@color/comment_grey"
+            android:textSize="17sp" />
+
+        <CheckBox
+            android:id="@+id/rb_outwook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rb_top"
+            android:button="@null" />
+        />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/schedule_outwook_address_divider"
+        layout="@layout/driver_line" />
+
+    <LinearLayout
+        android:id="@+id/btn_schedule_outwook_address"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/item_select"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lable_schedule_signcard_address"
+            android:textColor="@color/comment_grey"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_schedule_outwook_address"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:gravity="right|center_vertical"
+            android:hint="@string/please_select"
+            android:textColor="@color/text_black"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/banckground_color" />
+
+
+    <LinearLayout
+        android:id="@+id/btn_schedule_type_click"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/item_select"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lable_schedule_tip"
+            android:textColor="@color/comment_grey"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/btn_schedule_type"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:gravity="right|center_vertical"
+            android:hint="@string/please_select"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/comment_grey"
+            android:textSize="17sp"
+
+            />
+    </LinearLayout>
+
+    <include layout="@layout/driver_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lable_schedule_open"
+            android:textColor="@color/comment_grey"
+            android:textSize="17sp" />
+
+        <RadioGroup
+            android:id="@+id/rb_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_menu_left"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/vancloud_public"
+                android:textColor="@color/tab_check"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rb_self"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_menu_right"
+                android:button="@null"
+                android:gravity="center"
+                android:checked="true"
+                android:padding="5dp"
+                android:text="@string/vancloud_only_own"
+                android:textColor="@color/tab_check"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <include layout="@layout/driver_line" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:button="@null"
+    android:gravity="center"
+    android:paddingLeft="0dp"
+    android:singleLine="true"
+    android:text="@string/recruit_all"
+    android:textColor="@drawable/tab_item"
+    android:textSize="15sp"></RadioButton>

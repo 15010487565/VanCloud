@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="55dip"
+    android:layout_height="75dip"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_arrow_up" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/arrow"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:textSize="@dimen/name_size" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_name"
+        android:layout_centerHorizontal="true">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_icon"
+            fresco:failureImage="@mipmap/user_photo_default_small"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@mipmap/user_photo_default_small"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            fresco:roundAsCircle="true"
+            fresco:roundedCornerRadius="180dp"
+            fresco:roundingBorderColor="#edf8fe"
+            fresco:roundingBorderWidth="2dp" />
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <!--  <LinearLayout
+          android:id="@+id/btn_create_group"
+          android:layout_width="fill_parent"
+          android:layout_height="50dip"
+          android:gravity="center">
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dip"
+              android:src="@drawable/icon_add_group" />
+
+          <TextView
+              android:id="@+id/sub_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:text="@string/create_chat_group"
+              android:textColor="@color/bg_title"
+              android:textSize="17sp" />
+      </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@drawable/me_item_single"
+            android:scrollbars="none" />
+
+        <com.vgtech.common.view.VancloudLoadingLayout
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

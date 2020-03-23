@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/default_photo"
+                android:layout_width="50dp"
+                android:layout_height="51dp"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:src="@mipmap/overtime_img"/>
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dip"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/default_photo"
+                android:singleLine="true"
+                android:text="2016-1-25"
+                android:textColor="@color/text_black"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dip"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/date_txt"
+                android:singleLine="true"
+                android:text="平日加班"
+                android:textColor="@color/text_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/time_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/date_txt"
+                android:layout_below="@id/date_txt"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/comment_grey"
+                android:textSize="13sp"
+                android:text="时间：20:00~22:00"/>
+
+            <TextView
+                android:id="@+id/time_num_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_txt"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/time_txt"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="时长:2小时"
+                android:textColor="@color/comment_grey"
+                android:textSize="13sp"/>
+
+            <!--<TextView
+                android:id="@+id/status_txt"
+                android:layout_width="55dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:text="审批中"
+                android:textSize="13sp"
+                android:drawableRight="@drawable/wg_gz_right_icon" />-->
+
+            <TextView
+                android:id="@+id/status_txt"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:textSize="13sp"
+                android:gravity="right"
+                android:layout_marginRight="35dp"
+                android:text="通过"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/wg_gz_right_icon" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

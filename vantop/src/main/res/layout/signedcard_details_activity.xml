@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bg_titlebar"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/punchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_background"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="10dip"
+                    android:visibility="gone">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/staff_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/user_photo_default_small" />
+
+                    <TextView
+                        android:id="@+id/staff_name_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dip"
+                        android:layout_toRightOf="@id/staff_img"
+                        android:singleLine="true"
+                        android:textColor="@color/txt_currency"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/staff_no_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/staff_name_txt"
+                        android:layout_alignLeft="@id/staff_name_txt"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/txt_explain"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/below_divider"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/ApplyDetails"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/card_number" />
+
+                        <TextView
+                            android:id="@+id/card_number_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/ApplyDetails"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/signed_detail_time" />
+
+                        <TextView
+                            android:id="@+id/data_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/ApplyDetails"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/terminal" />
+
+                        <TextView
+                            android:id="@+id/terminal_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/ApplyDetails"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:text="@string/reason" />
+
+                        <TextView
+                            android:id="@+id/reason_txt"
+                            style="@style/explain_content" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/ApplyDetails"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:singleLine="false"
+                            android:text="@string/note" />
+
+                        <TextView
+                            android:id="@+id/remark_txt"
+                            style="@style/explain_content"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/signedcard_details_iv_pic_container"
+                        style="@style/ApplyDetails"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            style="@style/explain_style"
+                            android:layout_gravity="top"
+                            android:text="@string/attachment" />
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/signedcard_details_iv_pic"
+                            style="@style/explain_content"
+                            android:layout_width="112dp"
+                            android:layout_height="88dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/below_divider" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/black_22"
+                        android:text="@string/vantop_approval" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <com.vgtech.common.view.NoScrollListview
+                    android:id="@+id/approval_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="0dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/status_img"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.vgtech.common.view.VancloudLoadingLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/banckground_color"
+        android:visibility="gone" />
+</RelativeLayout>

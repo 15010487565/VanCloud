@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg_titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@color/bg_title"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_actionbar"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha" />
+
+                <View
+                    android:id="@+id/title_right"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_actionbar"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/btn_title"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_right"
+                android:layout_width="50dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/btn_actionbar"
+                android:src="@drawable/btn_add"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btn_action_search"
+                android:layout_width="50dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/btn_actionbar"
+                android:src="@mipmap/abc_ic_search_api_mtrl_alpha"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btn_action_more"
+                android:layout_width="50dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/btn_actionbar"
+                android:src="@mipmap/abc_ic_menu_moreoverflow_mtrl_alpha"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btn_apply"
+                android:layout_width="50dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/btn_actionbar"
+                android:src="@mipmap/wg_server_save"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_actionbar"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/btn_finish"
+            android:textColor="@color/btn_title"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@android:id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

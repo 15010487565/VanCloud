@@ -1,0 +1,12 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/ripple">
+    <item>
+        <selector>
+            <item
+                android:drawable="@drawable/rect_orgin_highlight"
+                android:state_pressed="true" />
+            <item android:drawable="@drawable/rect_orgin" />
+
+        </selector>
+    </item>
+</ripple>

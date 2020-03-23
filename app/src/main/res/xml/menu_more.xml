@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List>
+
+    <Item
+        id="action_menu_groupchat"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_menu_groupchat"
+        label="android.resource://com.vgtech.vancloud/string/action_menu_groupchat" />
+    <Item
+        id="action_menu_create_meeting"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_menu_creatmeeting"
+        label="android.resource://com.vgtech.vancloud/string/action_menu_create_meeting" />
+    <Item
+        id="action_menu_invite_user"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_menu__inviteuser"
+        label="android.resource://com.vgtech.vancloud/string/action_menu_invite_user" />
+    <Item
+        id="action_menu_add_user"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_menu__adduser"
+        label="android.resource://com.vgtech.vancloud/string/action_menu_add_user" />
+    <Item
+        id="action_menu_usermanager"
+        icon="android.resource://com.vgtech.vancloud/mipmap/ic_menu__usermanager"
+        label="android.resource://com.vgtech.vancloud/string/action_menu_usermanager" />
+</List>

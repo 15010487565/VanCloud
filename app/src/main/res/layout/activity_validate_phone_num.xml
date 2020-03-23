@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_choose_country" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <EditText
+                android:id="@+id/et_usertel"
+                style="@style/EditText_input"
+                android:hint="@string/register_you_num"
+                android:inputType="phone" />
+
+            <ImageView
+                style="@style/ImageView_input"
+                android:src="@mipmap/login_phone"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/TextView_input"
+                android:text="@string/phone" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/et_usertel"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48dp"
+                android:background="@color/white"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="number"
+                android:maxLength="5"
+                android:text="+86"
+                android:textColor="#353535"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/del_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:padding="10dip"
+                android:src="@drawable/ic_edit_del"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eaeaea" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <com.vgtech.vancloud.ui.view.CountDownTextView
+                android:id="@+id/get_verify_code_cdtv"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/btn_register_bg"
+                android:gravity="center"
+                android:text="@string/get_verify_code"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:beginBackground="@drawable/btn_register_bg"
+                app:beginString="@string/get_verify_code"
+                app:beginTextColor="@android:color/white"
+                app:countDownInterval="1"
+                app:finishBackground="@drawable/btn_register_bg"
+                app:finishString="@string/resend_verify_code"
+                app:finishTextColor="@android:color/white"
+                app:secondsInFuture="60"
+                app:tickBackground="@drawable/yuanjiao_2"
+                app:tickString="@string/get_verify_code_again"
+                app:tickTextColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/et_code"
+                style="@style/EditText_input"
+                android:layout_toLeftOf="@id/get_verify_code_cdtv"
+                android:ems="6"
+                android:hint="@string/please_input_verify_code"
+                android:inputType="number" />
+
+            <ImageView
+                style="@style/ImageView_input"
+                android:src="@mipmap/login_pwd"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/TextView_input"
+                android:text="@string/identifying_code" />
+
+            <ImageView
+                android:id="@+id/del_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/get_verify_code_cdtv"
+                android:layout_toStartOf="@+id/get_verify_code_cdtv"
+                android:padding="10dip"
+                android:src="@drawable/ic_edit_del"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#eaeaea" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="24dip"
+            android:background="@drawable/btn_register_bg"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/next_step"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

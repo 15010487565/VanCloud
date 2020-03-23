@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sign_status">
+        <item>All Attendance</item>
+        <item>Exception Attendance</item>
+    </string-array>
+</resources>

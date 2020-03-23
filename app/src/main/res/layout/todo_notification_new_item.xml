@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.d.lib.slidelayout.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sl_Item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- Content view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/shape_top_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/info_photo"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/user_photo_default_small" />
+                <TextView
+                    android:id="@+id/tv_info_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="@color/black_22"
+                    android:textSize="13sp"
+                    android:text=""/>
+                <TextView
+                    android:id="@+id/tv_info_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:textColor="@color/black_99"
+                    android:textSize="11sp"
+                    android:text=""/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/is_read"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tip_msg_count" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_22"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/black_ed" />
+        <LinearLayout
+            android:id="@+id/ll_check"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_bottom_bg"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_22"
+                android:layout_gravity="center_vertical"
+                android:textSize="13sp"
+                android:text="立即查看"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Slide view -->
+    <LinearLayout
+        android:id="@+id/ll_Del"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/shape_stroke_left"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_shanchu_unfocused"
+            android:gravity="center"
+            android:background="@drawable/shape_red"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:gravity="center"
+            android:text="删除"/>
+    </LinearLayout>
+
+</com.d.lib.slidelayout.SlideLayout>
+

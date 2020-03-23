@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/banckground_color"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_selected_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:text="@string/personal_jobdict_all_hangye"
+        android:drawableRight="@mipmap/common_words_cleaner"
+        android:background="@drawable/bg_selected"
+        android:layout_height="wrap_content" />
+</LinearLayout>

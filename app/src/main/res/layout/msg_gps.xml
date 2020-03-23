@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@id/messages_item_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@id/avatar"
+        android:layout_width="@dimen/user_icon_wh"
+        android:layout_height="@dimen/user_icon_wh"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/messages_item_time"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:layout_marginLeft="5dip"
+        android:id="@+id/tv_name"
+        android:textSize="@dimen/namesize"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_below="@id/messages_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/text_black" />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/avatar"
+        android:foreground="@drawable/wg_xx_chat_left_img">
+
+        <ImageView
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:src="@drawable/msg_loc_img"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@id/messages_item_content"
+            android:layout_width="108dp"
+            android:layout_height="38.5dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/msg_loc_text_bg"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+</RelativeLayout>

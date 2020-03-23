@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/user_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/user_photo_default_small"
+            fresco:roundAsCircle="true"
+            fresco:roundedCornerRadius="180dp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_photo"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textColor="@color/bg_title"
+            android:textSize="@dimen/name_size" />
+
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/user_photo"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:textColor="@color/comment_grey"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/workreport_type_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/timestamp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/comment_grey"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/user_photo"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/operation"
+                android:layout_width="9dp"
+                android:layout_height="12dp"
+                android:layout_alignBottom="@+id/operation_tv"
+                android:layout_toLeftOf="@+id/operation_tv"
+                android:src="@mipmap/schedule_indeterminate_bg"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/operation_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingRight="12dp"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_schedule_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/operation_tv"
+                android:layout_marginRight="10dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/bg_title"
+                android:textSize="@dimen/name_size" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

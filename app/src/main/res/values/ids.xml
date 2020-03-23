@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="avatar" type="id" />
+    <item name="messages_item_right_btn" type="id" />
+    <item name="messages_item_name" type="id" />
+    <item name="messages_item_time" type="id" />
+    <item name="messages_item_content" type="id" />
+    <item name="user_groups_item_right_btn" type="id" />
+    <item name="user_groups_item_name" type="id" />
+    <item name="user_groups_item_num" type="id" />
+    <item name="latitude" type="id" />
+    <item name="longitude" type="id" />
+    <item name="schedule_item" type="id" />
+    <item name="praise_click" type="id" />
+    <item name="date" type="id" />
+    <item name="order_info_id" type="id" />
+    <item name="position" type="id" />
+</resources>

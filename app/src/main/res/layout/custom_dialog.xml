@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogRoot"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/shape_custom_dialog_bg" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height"
+        android:layout_marginLeft="@dimen/dialog_title_icon_margin"
+        android:layout_marginRight="@dimen/dialog_title_icon_margin"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/dialog_text"
+        android:textSize="@dimen/dialog_title_text" />
+
+    <View
+        android:id="@+id/dialog_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_alignBottom="@id/dialog_title"
+        android:background="@color/gray_d" />
+
+    <LinearLayout
+        android:id="@+id/content_view_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_divider"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dialog_btn_magrin_top"
+            android:layout_marginLeft="@dimen/dialog_btn_magrin_left"
+            android:layout_marginRight="@dimen/dialog_btn_magrin_right"
+            android:layout_marginTop="@dimen/dialog_btn_magrin_top"
+            android:textColor="@color/dialog_text"
+            android:textSize="@dimen/dialog_edit_text" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dialog_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_alignBottom="@id/content_view_root"
+        android:background="@color/gray_d" />
+
+    <LinearLayout
+        android:id="@+id/dialog_btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_divider2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_left_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_btn_height"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/dialog_text"
+            android:textSize="@dimen/dialog_title_text" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_d" />
+
+        <TextView
+            android:id="@+id/dialog_right_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_btn_height"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/bg_title"
+            android:textSize="@dimen/dialog_title_text" />
+    </LinearLayout>
+
+</RelativeLayout>

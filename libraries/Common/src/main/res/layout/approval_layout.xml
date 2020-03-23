@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_title"
+        android:orientation="horizontal">
+
+        <com.vgtech.vancloud.ui.view.SquareLayout
+            android:id="@+id/my_approval_click"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/blue_selector">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/approval_my_approval" />
+
+
+            <TextView
+                android:id="@+id/my_approval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:text="@string/common_my_approval"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </com.vgtech.vancloud.ui.view.SquareLayout>
+
+
+        <com.vgtech.vancloud.ui.view.SquareLayout
+            android:id="@+id/my_launch_click"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/blue_selector">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/approval_my_send" />
+
+
+            <TextView
+                android:id="@+id/my_launch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:text="@string/my_launch"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </com.vgtech.vancloud.ui.view.SquareLayout>
+
+        <com.vgtech.vancloud.ui.view.SquareLayout
+            android:id="@+id/cc_me_click"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/blue_selector">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/approval_cc_me" />
+
+
+            <TextView
+                android:id="@+id/cc_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:text="@string/cc_me"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </com.vgtech.vancloud.ui.view.SquareLayout>
+    </LinearLayout>
+
+    <com.vgtech.common.view.NoScrollGridviewSpilview
+        android:id="@+id/grid_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:horizontalSpacing="0.0dip"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0.0dip" />
+</LinearLayout>

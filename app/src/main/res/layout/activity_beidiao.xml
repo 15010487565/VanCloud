@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/sort_normal"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/sort_color"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/step_one_line"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:background="#5CB85C" />
+
+        <TextView
+            android:id="@+id/step_two"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/sort_normal"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/sort_color"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/step_two_line"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:background="#f0f0f0" />
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/step_three"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|left"
+                android:background="@drawable/sort_normal"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/sort_color"
+                android:textSize="15sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:singleLine="true"
+            android:text="填写被调人信息"
+            android:textColor="@color/grey_text_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="选择调查项目"
+            android:textColor="@color/grey_text_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:singleLine="true"
+            android:text="生成调查结果"
+            android:textColor="@color/grey_text_color"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <com.vgtech.common.view.NoScrollViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

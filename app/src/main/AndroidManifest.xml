@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vgtech.vancloud">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 个推SDK权限配置开始 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" /> <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.${applicationId}" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <permission
+        android:name="getui.permission.GetuiService.${applicationId}"
+        android:protectionLevel="normal" /> <!-- 个推SDK权限配置结束 -->
+    <!-- 支持个推3.0 电子围栏功能 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 浮动通知权限 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 腾讯bugly -->
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" /> <!-- 语言 -->
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 添加快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> <!-- 查询快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> <!-- 个推SDK权限配置结束 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- iBeancon功能所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".VanCloudApplication"
+        android:allowBackup="true"
+        android:configChanges="locale"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/ApplicationTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".WelcomeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/ApplicationTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data
+                    android:host="download.vgsaas.com"
+                    android:path="/meeting"
+                    android:scheme="vancloud" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.LoadingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/ApplicationTheme">
+
+        </activity>
+        <activity
+            android:name=".ui.RSplashActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".signin.SigninMainX5Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name=".ui.web.WebX5Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.web.WebX5FileActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="BaiduMobAd_APP_ID"
+            android:value="d49eabdb" />
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="xmpp.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.vgtech.vancloud.ui.chat.models.ChatGroup,com.vgtech.vancloud.ui.chat.models.ChatMessage,com.vgtech.vancloud.ui.chat.models.ChatUser" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ZCWQTZmBWziKORGdnMhGHh1r" /> <!-- vic.zhang -->
+        <!--
+                   <meta-data
+                   android:name="UMENG_APPKEY"
+                   android:value="566f8eebe0f55a54c600000c" />
+        -->
+        <!-- rdpublic -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56fa618b67e58efc0c0000b4" /> <!-- debug -->
+        <!--
+               <meta-data
+                android:name="UMENG_APPKEY"
+                android:value="56221c1ae0f55a446b000044" />
+        -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <provider
+            android:name="com.vgtech.common.provider.VanCloudProvider"
+            android:authorities="${applicationId}"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service android:name=".service.SubmitService" />
+        <service
+            android:name=".service.AlarmKlaxonService"
+            android:process=":alarm" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" /> <!-- android:launchMode="singleInstance" -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoTransparentThemeAnimation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.vgtech.vancloud.login" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.InputCodeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.NoticeListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.group.OrganizationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.announcement.NoticeInfoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.beidiao.BdListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.web.NeigouWebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.web.LeaderQueryWebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.web.XinlitijianWebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.web.JixiaoWebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.web.ReportFormWebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.web.NormalWebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.web.HttpWebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.worklog.WorklogActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.worklog.WorkLogSearchActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.worklog.CreateWorkLogActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.worklog.SubWorkLogDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.group.OrganizationSelectedActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.vgtech.vancloud.intent.action.GroupUserSelectActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.group.OrganizationVanCloudActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.group.CreateWorkGroupActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.module.recruit.ResumeHomeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.recruit.JobModuleActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.recruit.ResumeManageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.recruit.SearchResumeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.register.RegisterCompanyActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.vgtech.vancloud.register.company" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.FindPwdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.FindPasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.FindPwdStartActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.recruit.JobCreateActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/job_create"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.common.AlarmAlertActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeLogout" />
+        <activity
+            android:name=".ui.web.BjdcWebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.web.ProcessWebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.web.InvestigationRecordsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.SingleEditActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.common.AlertActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeLogout" />
+        <activity
+            android:name=".ui.beidiao.BeidiaoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.HostSettingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/service_setting"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ui.common.LocationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/nearby"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.chat.AtListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/lable_common_user"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.common.MapLocationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/nearby"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.module.me.DepartSelectedActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.common.CitySelectedActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/lable_city_select"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.web.WebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.me.ResignActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/del_user"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.common.LogoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeLogout">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.vgtech.vancloud.logout" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.UpdateTipActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeLogout" />
+        <activity
+            android:name=".ui.common.image.ClipActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.vgtech.vancloud.clipimage" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.module.me.SelfInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.intent.action.SelfInfoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.module.me.WorkGroupActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/tab_work"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.module.me.WorkGroupInfoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoTransparentThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.vgtech.vancloud.company" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.chat.SingleChatActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <!--
+                <activity
+                android:name=".ui.register.ui.RegisteredLoginActivity"
+                android:clearTaskOnLaunch="true"
+                android:label="@string/lable_login"
+                android:launchMode="singleTask"
+                android:theme="@style/AppThemeAnimation"></activity>
+        -->
+        <activity
+            android:name=".ui.module.schedule.ScheduleHomeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.schedule.ScheduleSearchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.common.publish.NewPublishedActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoTransparentThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.vgtech.vancloud.publish" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vgtech.common.ui.publish.ImageGridActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.me.DraftActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/lable_draft"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name="com.vgtech.common.image.PhotoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name="com.vgtech.common.ui.publish.PicSelectActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.schedule.ScheduleDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/title_schedule_detail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.register.ui.RoleActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.register.ui.SetPositionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.register.ui.AddContactsNumActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.module.resume.ResumeDetail"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- 配置第三方Receiver -->
+        <receiver android:name=".reciver.AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.alarm.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.schedule" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".reciver.ExitReceiver">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.exit" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".reciver.GroupReceiver">
+            <intent-filter>
+                <action android:name="android.group.refresh" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.moudle.permissions.refresh" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".reciver.ChatGroupReceiver">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.ACTION_CHATGROUP_REFRESH" />
+            </intent-filter>
+        </receiver> <!-- 配置SDK核心服务 -->
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置的第三方参数属性 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="${GETUI_APP_ID}" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="${GETUI_APP_KEY}" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="${GETUI_APP_SECRET}" /> <!-- <service -->
+        <!-- android:name="com.igexin.sdk.PushService" -->
+        <!-- android:exported="true" -->
+        <!-- android:label="NotificationCenter" -->
+        <!-- android:process=":pushservice" /> -->
+        <service
+            android:name=".reciver.GetuiPushReceiver"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+        <service
+            android:name=".reciver.GetuiGTIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- android:permission在2.13.1.0版本后必须配置 -->
+        <!--<service-->
+            <!--android:name="com.igexin.sdk.PushService"-->
+            <!--android:exported="true"-->
+            <!--android:label="NotificationCenter"-->
+            <!--android:process=":pushservice">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.igexin.sdk.action.service.message" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver> <!-- <receiver -->
+        <!-- android:name="com.igexin.sdk.PushManagerReceiver" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.igexin.sdk.action.pushmanager" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.igexin.sdk.GActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.vgtech.vancloud"
+            android:process=":pushservice" /> <!-- <activity -->
+        <!-- android:name="com.igexin.getuiext.activity.GetuiExtActivity" -->
+        <!-- android:configChanges="orientation|keyboard|keyboardHidden" -->
+        <!-- android:excludeFromRecents="true" -->
+        <!-- android:exported="false" -->
+        <!-- android:launchMode="singleTop" -->
+        <!-- android:process=":pushservice" -->
+        <!-- android:taskAffinity="android.task.myServicetask" -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" /> -->
+        <!-- <receiver -->
+        <!-- android:name="com.igexin.getuiext.service.PayloadReceiver" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" /> -->
+        <!-- <action android:name="com.igexin.sdk.action.cuIrqZ8qF3AhK6U1gUltM6" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <service -->
+        <!-- android:name="com.igexin.getuiext.service.GetuiExtService" -->
+        <!-- android:process=":pushservice" /> -->
+        <!-- 个推SDK配置结束 -->
+        <activity
+            android:name=".ui.module.task.TaskTransactActivity"
+            android:configChanges="locale"
+            android:label="@string/task_transact_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.common.image.ImageCheckActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.vgtech.imagecheck" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.module.schedule.ScheduleFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.module.workreport.WorkReportTransactActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" /> <!-- 公告Activity -->
+        <activity
+            android:name=".ui.module.announcement.AnnouncementListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.announcement.AnnouncementDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" /> <!-- 论坛Activity -->
+        <activity
+            android:name=".ui.LuntanListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.LuntanFatieActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.LuntanReplyListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.task.TaskActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.module.workreport.WorkReportNewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.module.flow.FlowReportNewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.module.flow.FlowHandleActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" /> <!-- 帮帮 -->
+        <activity
+            android:name=".ui.module.help.HelpListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.module.help.HelpDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/help_title_lable"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--
+              <activity
+              android:name=".ui.module.me.SettingActivity"
+              android:label="@string/settings"
+              android:screenOrientation="portrait"
+              android:theme="@style/AppThemeAnimation" />
+        -->
+        <activity
+            android:name=".ui.module.me.AboutVanCloudActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/about_vancloud"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.vgtech.vancloud.ui.module.me.AboutVanCloudActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.module.me.SystemNotifyListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/feature_introduce"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" /> <!-- 通讯录 -->
+        <activity
+            android:name="zhou.tools.fileselector.FileSelectorActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.me.UpdatePwdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/me_setting"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeAnimation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.vgtech.vancloud.updatepwd" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.module.share.ShareActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.share.SharedInfoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/shared_detail_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.me.CollectionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/collection_me"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.me.ShareCollectionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.MapLocationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/location"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoTransparentThemeAnimation">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.intent.action.MapLocation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.SearchPoiActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/location"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.register.country.CountryActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.me.HelpCollectionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.register.ui.DefaultPositionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.intent.action.DefaultPositionActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.register.ui.UpdatePositionActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.intent.action.DefaultPositionActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.register.ui.SetupDepartmentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.intent.action.SetupDepartmentActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.register.ui.EditDepartmentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.intent.action.EditDepartmentActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.register.ui.ChooseSubPartmentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+
+        <activity
+            android:name=".ui.register.ui.CompanyInfoEditActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.register.ui.QrCodeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.register.ui.ValidatePhoneNumActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.intent.action.ValidatePhoneNumActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.register.ui.UpdatePasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.plans.PlansMainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.plans.RecommendListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.recruit.RecruitmentInfoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.recruit.ResumeListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.recruit.RecruitmentDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/recruit_info"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.recruit.WelfareTreatmentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.financemanagement.PasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.intent.action.PasswordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.module.payment.OrderPayActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/order_pay"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoTransparentThemeAnimation">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.intent.action.OrderPayActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.module.financemanagement.PayActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/pay_the_orders_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.intent.action.PayActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.module.financemanagement.FinanceManageMentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.vgtech.vancloud.intent.action.FinanceManageMentActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.module.financemanagement.OrderDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/order_detail_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.financemanagement.ToPayListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.financemanagement.TradeListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/trade_list"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.register.ui.AddNewStaff"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.financemanagement.TradeDetail"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/trade_list"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.financemanagement.OrderListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.financemanagement.NewOrderDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.payment.PayResultActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/pay_result"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx3fa65dfa895df822" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay" /> <!-- 支付宝网页版 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" /> <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.module.financemanagement.TradeTypeListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.module.accountmanagement.AccountManagementActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".ui.module.accountmanagement.AccountBindingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".ui.module.todo.ToDoNotificationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.module.todo.MessageListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.todo.MessageListNewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.todo.SystemNotificationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.contact.InvitationColleagueActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.contact.WebAddActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.contact.StaffApplysActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.contact.StaffApprovalActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.todo.CommentMessageListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.approval.ApprovalMainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.approval.ApplyMainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.approval.ApprovalListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.module.approval.MyApprovalActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.module.ReciverUserActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.vgtech.cloud.reciveruseractivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.module.ReciverUserListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".ui.module.me.ChangePhoneNumberActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name="com.vgtech.common.ui.permissions.PermissionsActivity"
+            android:launchMode="singleTop" />
+
+        <provider
+            android:name=".ui.web.BaseFileProvider"
+            android:authorities="com.vgtech.vancloud.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".signin.SignInLoginActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".signin.SigninPwdNextActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+        <activity
+            android:name=".signin.SigninPwdActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeAnimation" />
+    </application>
+
+</manifest>

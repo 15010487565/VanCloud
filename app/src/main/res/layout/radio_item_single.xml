@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:minHeight="50dip">
+
+
+    <ImageView
+        android:id="@+id/id_treenode_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:src="@mipmap/tree_ec" />
+
+    <CheckBox
+        android:id="@android:id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/icon_check"
+        android:clickable="true"
+        android:focusable="false" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/user_photo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dip"
+        android:src="@mipmap/user_photo_default_small" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_treenode_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/text_black"
+            android:textSize="17dip" />
+
+        <TextView
+            android:id="@+id/id_treenode_sublabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/comment_grey"
+            android:textSize="15dip" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_edit"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_marginRight="10dip"
+        android:textColor="@color/edit_color"
+        android:text="@string/editor" />
+    <TextView
+        android:id="@+id/btn_join"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_marginRight="10dip"
+        android:textColor="@color/edit_color"
+        android:text="@string/join" />
+    <TextView
+        android:id="@+id/btn_info_edit"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_marginRight="10dip"
+        android:textColor="@color/edit_color"
+        android:text="@string/editor" />
+
+</LinearLayout>

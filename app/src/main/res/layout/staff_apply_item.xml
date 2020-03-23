@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/default_photo"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/default_user_photo_big" />
+        <TextView
+            android:id="@+id/userName_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/default_photo"
+            android:singleLine="true"
+            android:textColor="@color/txt_currency"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/number_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/userName_txt"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/txt_currency"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/companyName_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/userName_txt"
+            android:layout_below="@id/number_txt"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/txt_explain"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/status_txt"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_arrow_right" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="70dp"
+            android:background="@color/line_color" />
+    </RelativeLayout>
+</LinearLayout>

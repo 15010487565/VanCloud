@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckground_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/my_swiperefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/btn_apply_open_app"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="@string/lable_apply_openapp"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_register_bg" />
+</LinearLayout>

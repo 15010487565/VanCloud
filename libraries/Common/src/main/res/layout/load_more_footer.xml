@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/load_more_footer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dip"
+    android:gravity="center"
+    android:paddingTop="5dip">
+
+    <TextView
+        android:id="@+id/no_more_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/dataloading"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <com.vgtech.common.view.progressbar.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/no_more_textView"
+        wheel:matProg_barColor="@color/bg_title"
+        wheel:matProg_barWidth="2dp"
+        wheel:matProg_progressIndeterminate="true" />
+
+</RelativeLayout>

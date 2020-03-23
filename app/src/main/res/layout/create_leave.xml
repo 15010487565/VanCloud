@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/btn_leave_type_click"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/item_select"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lable_leave"
+            android:textColor="@color/text_black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/btn_leave_type"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp"
+
+            />
+    </LinearLayout>
+
+    <include layout="@layout/driver_line" />
+
+    <LinearLayout
+        android:id="@+id/start_time_click"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/item_select"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_time"
+            android:textColor="@color/text_black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp"
+
+            />
+    </LinearLayout>
+
+    <include layout="@layout/driver_line" />
+
+    <LinearLayout
+        android:id="@+id/end_time_click"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/item_select"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_time"
+            android:textColor="@color/text_black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp"
+
+            />
+    </LinearLayout>
+
+    <include layout="@layout/driver_line" />
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/leave_time_length"
+            android:textColor="@color/text_black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/hour"
+            android:textColor="@color/text_black"
+            android:textSize="17sp" />
+
+
+        <EditText
+            android:id="@+id/et_leave_time"
+            android:layout_width="100dip"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:layout_toLeftOf="@id/tv_unit"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="right|center_vertical"
+            android:inputType="number"
+            android:maxLength="3"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/driver_line" />
+
+</LinearLayout>

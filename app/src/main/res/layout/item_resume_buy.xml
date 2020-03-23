@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_round"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_list_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:drawableLeft="@drawable/select_checkbox"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/checkbox_list_item"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/sex_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/name_tv"
+                android:src="@mipmap/icon_sex_man" />
+
+            <LinearLayout
+                android:id="@+id/price_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/blue_round_ed"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/user_photo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/user_photo_default_small" />
+
+
+            <TextView
+                android:id="@+id/job_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/wish_job_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/job_type_tv"
+                android:layout_toRightOf="@+id/user_photo"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/comment_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/paymoney_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wish_job_tv"
+                android:layout_toRightOf="@+id/user_photo"
+                android:drawableLeft="@mipmap/icon_money_press"
+                android:drawablePadding="5dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/comment_grey"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/city_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wish_job_tv"
+                android:layout_toRightOf="@+id/paymoney_tv"
+                android:drawableLeft="@mipmap/icon_address_press"
+                android:drawablePadding="5dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/comment_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/record_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wish_job_tv"
+                android:layout_toRightOf="@+id/city_tv"
+                android:drawableLeft="@mipmap/icon_school_press"
+                android:drawablePadding="5dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textColor="@color/comment_grey"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_arrow_right"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/operation"
+                android:layout_width="9dp"
+                android:layout_height="12dp"
+                android:layout_alignBottom="@+id/operation_tv"
+                android:layout_toLeftOf="@+id/operation_tv"
+                android:src="@mipmap/schedule_indeterminate_bg"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/video_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_video_resume" />
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="5dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/comment_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/del_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/grey_round_bg"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/recruit_del"
+                android:textColor="@color/comment_grey"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/type_view"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/prent_widget_ffv"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/prent_widget_fw"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/personal_cancle"
+            android:textColor="@color/text_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/data_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/btn_sure"
+            android:layout_toRightOf="@+id/btn_cancel"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/txt_explain"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/ok"
+            android:textColor="@color/text_black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/out_line" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/prent_widget_fwv"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <LinearLayout
+                style="@style/prent_widget_fw"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <com.vgtech.common.utils.wheel.WheelView
+                    android:id="@+id/year"
+                    style="@style/prent_widget_fw"
+                    android:layout_width="100dp"
+                    android:layout_weight="1" />
+
+                <com.vgtech.common.utils.wheel.WheelView
+                    android:id="@+id/months"
+                    style="@style/prent_widget_fw"
+                    android:layout_width="100dp"
+                    android:layout_weight="1" />
+
+                <com.vgtech.common.utils.wheel.WheelView
+                    android:id="@+id/day"
+                    style="@style/prent_widget_fw"
+                    android:layout_width="100dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/spit_line" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginTop="30sp"
+                android:background="@color/spit_line" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/diaphaneity_white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/finish_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_button">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/img01"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/more_button_finish_click" />
+
+                <TextView
+                    android:id="@+id/txt01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="9dp"
+                    android:text="@string/finish"
+                    android:textColor="@drawable/bottom_button_text"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0.25dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/line_color" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cancel_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_button">
+
+            <View
+                android:layout_width="0.25dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/img02"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/more_button_cancel_click" />
+
+                <TextView
+                    android:id="@+id/txt02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="9dp"
+                    android:text="@string/cancel"
+                    android:textColor="@drawable/bottom_button_text"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0.25dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/revise_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_button">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/img03"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/more_button_revise_click" />
+
+                <TextView
+                    android:id="@+id/txt03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="9dp"
+                    android:text="@string/revise"
+                    android:textColor="@drawable/bottom_button_text"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.25dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:background="@color/line_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/comment_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_button"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/more_button_comment_click" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="9dp"
+                    android:text="@string/right_comment"
+                    android:textColor="@drawable/bottom_button_text"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/agree_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_button"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/agree" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="9dp"
+                    android:text="@string/agree"
+                    android:textColor="@drawable/bottom_button_text"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/disagree_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_button"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/disagree" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="9dp"
+                    android:text="@string/disagree"
+                    android:textColor="@drawable/bottom_button_text"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+
+            android:id="@+id/btn_action_comment"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:background="@drawable/selector_share_popu_left"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/ic_share_action_comment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="#343d44" />
+
+        <LinearLayout
+            android:background="@drawable/selector_share_popu_center"
+            android:id="@+id/btn_action_praise"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/ic_share_action_goods" />
+
+            <TextView
+                android:id="@+id/iv_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/praise"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="#343d44" />
+
+        <LinearLayout
+
+            android:background="@drawable/selector_share_popu_right"
+            android:id="@+id/btn_action_more"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/ic_share_action_more" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

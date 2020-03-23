@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shared_content_background">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/user_photo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/user_photo_default_small" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/user_photo"
+        android:singleLine="true"
+        android:text="ssssssss"
+        android:textColor="@color/comment_receiver"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/user_name"
+        android:layout_marginRight="5dp"
+        android:singleLine="true"
+        android:text="1111111"
+        android:textColor="@color/comment_grey"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/content_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/user_photo"
+        android:text="sssssssssss"
+        android:textColor="@color/text_black"
+        android:textSize="15sp" />
+
+    <com.vgtech.common.view.NoScrollGridview
+        android:id="@+id/imagegridview"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_text"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/user_photo"
+        android:focusable="false"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:verticalSpacing="5dp"
+        android:visibility="gone" />
+
+
+    <com.vgtech.common.view.NoScrollListview
+        android:id="@+id/voice_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagegridview"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/user_photo"
+        android:divider="@null"
+        android:focusable="false"
+        android:scrollbars="none"
+        android:visibility="gone" />
+</RelativeLayout>
